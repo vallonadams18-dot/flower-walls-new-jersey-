@@ -1,6 +1,10 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
+  // The GitHub Pages preview serves the site from /<repo-name>/, so asset
+  // and link paths need that prefix there. Production (custom domain or
+  // Cloudflare Pages) serves from the root and builds without BASE_PATH.
+  basePath: process.env.BASE_PATH || undefined,
   // Static export: `next build` writes a fully static site to ./out,
   // which GitHub Pages serves directly. No Node server, no hosting bill.
   output: "export",
