@@ -1,14 +1,59 @@
 {
-  "_note": "The old WordPress homepage's photo content, imported verbatim. Downloaded from the live site by the import-legacy-images workflow (this sandbox cannot reach the domain). Filenames sanitized to New Jersey-safe names.",
-  "images": [
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/atlanta-flower-wall-5.-comp.jpg", "file": "hero-flower-wall.jpg", "alt": "Signature flower wall installation by Flower Walls New Jersey", "use": "hero"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/1-section-flower-wall-rental-san-francisco.jpg", "file": "flower-wall-showcase.jpg", "alt": "Luxury flower wall backdrop styled for an event", "use": "slideshow"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/photo-booth-and-flower-wall-rental-san-francisco.png", "file": "photo-booth-flower-wall.png", "alt": "Photo booth paired with a flower wall backdrop", "use": "slideshow"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/Featured-Flower-Walls.png", "file": "review-featured-flower-walls.png", "alt": "", "use": "review"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/site-titles.png", "file": "review-site-titles.png", "alt": "", "use": "review"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/Neon-Signs-San-Francisco-Bay-Area.png", "file": "review-neon-signs.png", "alt": "", "use": "review"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/event-rentals.png", "file": "review-event-rentals.png", "alt": "", "use": "review"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/printing-services-for-events-1.png", "file": "review-printing-services.png", "alt": "", "use": "review"},
-    {"src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2023/01/Events-that-bloomed.png", "file": "review-events-that-bloomed.png", "alt": "", "use": "review"}
-  ]
+ "_note": "The old WordPress homepage's photo content. URLs are the export's real attachment paths (2024/08 and 2026/08 upload folders).",
+ "images": [
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2026/08/atlanta-flower-wall-5.-comp.jpg",
+   "file": "hero-flower-wall.jpg",
+   "alt": "Signature flower wall installation by Flower Walls New Jersey",
+   "use": "hero"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/1-section-flower-wall-rental-san-francisco.jpg",
+   "file": "flower-wall-showcase.jpg",
+   "alt": "Luxury flower wall backdrop styled for an event",
+   "use": "slideshow"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/photo-booth-and-flower-wall-rental-san-francisco.png",
+   "file": "photo-booth-flower-wall.png",
+   "alt": "Photo booth paired with a flower wall backdrop",
+   "use": "slideshow"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Featured-Flower-Walls.png",
+   "file": "review-featured-flower-walls.png",
+   "alt": "",
+   "use": "review"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/site-titles.png",
+   "file": "review-site-titles.png",
+   "alt": "",
+   "use": "review"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Neon-Signs-San-Francisco-Bay-Area.png",
+   "file": "review-neon-signs.png",
+   "alt": "",
+   "use": "review"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/event-rentals.png",
+   "file": "review-event-rentals.png",
+   "alt": "",
+   "use": "review"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/printing-services-for-events-1.png",
+   "file": "review-printing-services.png",
+   "alt": "",
+   "use": "review"
+  },
+  {
+   "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Events-that-bloomed.png",
+   "file": "review-events-that-bloomed.png",
+   "alt": "",
+   "use": "review"
+  }
+ ]
 }

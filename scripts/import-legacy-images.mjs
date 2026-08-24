@@ -10,7 +10,7 @@ import { readFile, writeFile, mkdir } from "node:fs/promises";
 const { images } = JSON.parse(await readFile("src/data/legacy-images.json", "utf8"));
 await mkdir("public/legacy", { recursive: true });
 
-const YEARS = ["2023/01", "2022/12", "2023/02", "2022/11", "2024/01", "2023/03"];
+const YEARS = ["2024/08", "2026/08", "2023/01", "2022/12", "2025/01"];
 let ok = 0, fail = [];
 for (const img of images) {
   const name = img.src.split("/").pop();

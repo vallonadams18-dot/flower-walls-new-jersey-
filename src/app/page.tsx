@@ -3,7 +3,7 @@ import walls from "@/data/walls.json";
 import { WallCard, type Wall } from "@/components/WallCard";
 import { SITE, SERVICE_AREAS } from "@/lib/site";
 import { pageMeta } from "@/lib/metadata";
-import { wallImage } from "@/lib/wallImage";
+import { asset } from "@/lib/asset";
 
 export const metadata = pageMeta({
   title: "Luxury Flower Wall Rentals in New Jersey",
@@ -14,8 +14,6 @@ export const metadata = pageMeta({
 
 const all = walls as Wall[];
 const featured = all.filter((w) => w.price).slice(0, 6);
-const hero = all.find((w) => w.slug === "majestic") ?? all[0];
-const heroImg = wallImage(hero.slug, hero.image);
 
 export default function Home() {
   return (
@@ -51,11 +49,11 @@ export default function Home() {
             </div>
           </div>
           <div className="overflow-hidden rounded-2xl bg-sage/20 lg:aspect-[4/5] aspect-square">
+            {/* The old site's hero photograph, self-hosted under /legacy */}
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
-              src={heroImg.src}
-              srcSet={heroImg.srcset}
-              alt={`${hero.name} luxury flower wall rental in New Jersey`}
+              src={asset("/legacy/hero-flower-wall.jpg")}
+              alt="Signature flower wall installation by Flower Walls New Jersey"
               width={800}
               height={1000}
               fetchPriority="high"
@@ -93,6 +91,26 @@ export default function Home() {
           <Link href="/packages/" className="ml-2 text-sm text-heritage hover:underline underline-offset-4 whitespace-nowrap">
             See how packages work →
           </Link>
+        </div>
+      </section>
+
+
+      {/* SLIDESHOW — the old homepage's photography, swipeable, no JS */}
+      <section className="border-b border-line bg-white">
+        <div className="mx-auto max-w-6xl px-4 py-12">
+          <p className="eyebrow">From Our Events</p>
+          <div className="mt-5 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3 [-webkit-overflow-scrolling:touch]">
+            {[
+              ["/legacy/hero-flower-wall.jpg", "Signature flower wall installation by Flower Walls New Jersey"],
+              ["/legacy/flower-wall-showcase.jpg", "Luxury flower wall backdrop styled for an event"],
+              ["/legacy/photo-booth-flower-wall.png", "Photo booth paired with a flower wall backdrop"],
+            ].map(([src, alt]) => (
+              <div key={src} className="snap-center shrink-0 w-[85%] sm:w-[60%] lg:w-[45%] overflow-hidden rounded-xl bg-sage/20 aspect-[4/3] shadow-sm">
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img src={asset(src)} alt={alt} width={900} height={675} loading="lazy" decoding="async" className="h-full w-full object-cover" />
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
