@@ -3,6 +3,7 @@ import { BOOTHS } from "@/data/booths";
 import { pageMeta } from "@/lib/metadata";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
+import { asset } from "@/lib/asset";
 
 export const metadata = pageMeta({
   title: "Photo Booth Rental New Jersey | Mirror, 360 & Glam",
@@ -37,9 +38,9 @@ export default function PhotoBooths() {
             Photo booth rental in New Jersey
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-ink/75">
-            Six booth experiences, every one delivered with an attendant, props
-            and instant sharing. Run one on its own, or pair it with a flower
-            wall for the full backdrop-and-booth setup.
+            {BOOTHS.length} booth experiences, every one delivered with an
+            attendant, props and instant sharing. Run one on its own, or pair
+            it with a flower wall for the full backdrop-and-booth setup.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <a href={SITE.booking.contact} className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">
@@ -53,17 +54,33 @@ export default function PhotoBooths() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 py-14">
-        <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
+        {/* Whole card is one link, the same pattern the wall grid uses. */}
+        <div className="grid gap-x-8 gap-y-12 sm:grid-cols-2 lg:grid-cols-3">
           {BOOTHS.map((b) => (
-            <article key={b.slug}>
-              <h2 className="font-[family-name:var(--font-display)] text-2xl">
-                <Link href={`/photo-booths/${b.slug}/`} className="hover:text-heritage">
+            <article key={b.slug} className="group">
+              <Link href={`/photo-booths/${b.slug}/`} className="block">
+                {b.image ? (
+                  <div className="overflow-hidden rounded-lg bg-ivory aspect-[3/2]">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src={asset(b.image.src)}
+                      alt={b.image.alt}
+                      width={1200}
+                      height={800}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                ) : null}
+                <h2 className="mt-3 font-[family-name:var(--font-display)] text-2xl group-hover:text-heritage transition-colors">
                   {b.name}
-                </Link>
-              </h2>
-              <p className="mt-2 text-ink/75">{b.lede}</p>
-              <Link href={`/photo-booths/${b.slug}/`} className="mt-3 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline">
-                About the {b.nav.toLowerCase()} →
+                </h2>
+                <p className="mt-2 text-ink/75">{b.lede}</p>
+                <span className="mt-3 inline-block text-sm font-medium text-heritage underline-offset-4 group-hover:underline">
+                  Learn more
+                  <span className="sr-only"> about the {b.nav.toLowerCase()}</span>
+                </span>
               </Link>
             </article>
           ))}
