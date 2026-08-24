@@ -45,7 +45,7 @@ export default function FlowerWalls() {
       </section>
 
       <section className="mx-auto max-w-6xl px-4 pb-16">
-        <div className="grid gap-8 grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        <div className="grid gap-x-8 gap-y-12 grid-cols-2 lg:grid-cols-3">
           {all.map((w) => (
             <WallCard key={w.slug} wall={w} />
           ))}

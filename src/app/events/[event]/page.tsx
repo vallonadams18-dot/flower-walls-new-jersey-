@@ -25,7 +25,7 @@ export default async function EventPage({ params }: Props) {
   const { event } = await params;
   const e = getEvent(event);
   if (!e) notFound();
-  const walls = e.walls.map((s) => allWalls.find((w) => w.slug === s)).filter(Boolean) as Wall[];
+  const walls = (e.walls.map((s) => allWalls.find((w) => w.slug === s)).filter(Boolean) as Wall[]).slice(0, 3);
   return (
     <>
       <JsonLd
@@ -61,7 +61,7 @@ export default async function EventPage({ params }: Props) {
 
       <section className="mx-auto max-w-6xl px-4 pb-6">
         <h2 className="font-[family-name:var(--font-display)] text-2xl">Walls that suit {e.nav.toLowerCase()}</h2>
-        <div className="mt-6 grid gap-8 grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-x-8 gap-y-12 grid-cols-2 lg:grid-cols-3">
           {walls.map((w) => <WallCard key={w.slug} wall={w} />)}
         </div>
       </section>

@@ -13,7 +13,7 @@ export const metadata = pageMeta({
   path: "/packages/",
 });
 
-const featured = (walls as Wall[]).filter((w) => w.price).slice(0, 4);
+const featured = (walls as Wall[]).filter((w) => w.price).slice(0, 3);
 
 export default function Packages() {
   return (
@@ -104,7 +104,7 @@ export default function Packages() {
           <h2 className="font-[family-name:var(--font-display)] text-2xl">Start with the wall</h2>
           <Link href="/flower-walls/" className="text-heritage hover:underline underline-offset-4 shrink-0">All {walls.length} walls →</Link>
         </div>
-        <div className="mt-6 grid gap-8 grid-cols-2 lg:grid-cols-4">
+        <div className="mt-6 grid gap-x-8 gap-y-12 grid-cols-2 lg:grid-cols-3">
           {featured.map((w) => <WallCard key={w.slug} wall={w} />)}
         </div>
         <div className="mt-10 rounded-xl bg-ivory p-6 sm:p-8">

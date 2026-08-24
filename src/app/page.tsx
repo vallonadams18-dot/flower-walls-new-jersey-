@@ -13,7 +13,7 @@ export const metadata = pageMeta({
 });
 
 const all = walls as Wall[];
-const featured = all.filter((w) => w.price).slice(0, 8);
+const featured = all.filter((w) => w.price).slice(0, 6);
 const hero = all.find((w) => w.slug === "majestic") ?? all[0];
 const heroImg = wallImage(hero.slug, hero.image);
 
@@ -107,7 +107,7 @@ export default function Home() {
             View all {all.length} →
           </Link>
         </div>
-        <div className="mt-8 grid gap-x-6 gap-y-10 grid-cols-2 lg:grid-cols-4">
+        <div className="mt-8 grid gap-x-8 gap-y-12 grid-cols-2 lg:grid-cols-3">
           {featured.map((w) => (
             <WallCard key={w.slug} wall={w} />
           ))}
