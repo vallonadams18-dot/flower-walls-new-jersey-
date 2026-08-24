@@ -3,7 +3,7 @@ import { SITE, SERVICE_AREAS } from "@/lib/site";
 import walls from "@/data/walls.json";
 
 export const metadata = pageMeta({
-  title: "About Us | Flower Wall Rentals New Jersey",
+  title: "About Us",
   description:
     "New Jersey's premier flower wall rental company, serving Jersey City, Newark, North Jersey, South Jersey and Barnegat with the state's largest selection.",
   path: "/about/",

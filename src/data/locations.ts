@@ -1,6 +1,9 @@
-/** Location cluster. Five at launch, chosen from the two real delivery hubs
- *  (Newark and Barnegat, 50-mile radius each). Every page must say things
- *  true only of its place — no doorway pages where only the city changes. */
+/** Location cluster. One page per area the business states it serves in
+ *  `SITE.SERVICE_AREAS`, reached from the two real delivery hubs (Newark and
+ *  Barnegat, 50-mile radius each). Barnegat itself has no page — it is a hub,
+ *  not a market, and the Jersey Shore page already explains it.
+ *  Every page must say things true only of its place — no doorway pages where
+ *  only the city changes. */
 export interface LocationPage {
   slug: string;
   nav: string;
@@ -17,7 +20,7 @@ export const LOCATIONS: LocationPage[] = [
     nav: "Jersey City",
     h1: "Flower wall rental in Jersey City",
     meta: {
-      title: "Flower Wall Rental Jersey City | NJ Flower Walls",
+      title: "Flower Wall Rental Jersey City",
       description:
         "Flower wall and photo booth rentals in Jersey City — waterfront venues, lofts and rooftops, delivered from our Newark hub minutes away.",
     },
@@ -44,7 +47,7 @@ export const LOCATIONS: LocationPage[] = [
     nav: "Newark",
     h1: "Flower wall rental in Newark",
     meta: {
-      title: "Flower Wall Rental Newark NJ | NJ Flower Walls",
+      title: "Flower Wall Rental Newark NJ",
       description:
         "Flower wall and photo booth rentals in Newark, NJ — our home base. Halls, hotels and the Ironbound's event spaces, with no travel fee.",
     },
@@ -71,7 +74,7 @@ export const LOCATIONS: LocationPage[] = [
     nav: "Hoboken",
     h1: "Flower wall rental in Hoboken",
     meta: {
-      title: "Flower Wall Rental Hoboken | NJ Flower Walls",
+      title: "Flower Wall Rental Hoboken",
       description:
         "Flower wall and photo booth rentals in Hoboken — waterfront weddings, brownstone parties and rooftop events, with parking handled in the quote.",
     },
@@ -98,7 +101,7 @@ export const LOCATIONS: LocationPage[] = [
     nav: "Montclair",
     h1: "Flower wall rental in Montclair",
     meta: {
-      title: "Flower Wall Rental Montclair | NJ Flower Walls",
+      title: "Flower Wall Rental Montclair",
       description:
         "Flower wall and photo booth rentals in Montclair, NJ — restaurant private rooms, art-space events, backyard showers and Essex County weddings.",
     },
@@ -125,7 +128,7 @@ export const LOCATIONS: LocationPage[] = [
     nav: "Jersey Shore",
     h1: "Flower wall rental at the Jersey Shore",
     meta: {
-      title: "Flower Wall Rental Jersey Shore | NJ Flower Walls",
+      title: "Flower Wall Rental Jersey Shore",
       description:
         "Flower wall and photo booth rentals at the Jersey Shore from our Barnegat hub — beach weddings, Asbury Park venues and Atlantic City events.",
     },
@@ -146,6 +149,197 @@ export const LOCATIONS: LocationPage[] = [
       },
     ],
     events: ["weddings", "birthdays", "corporate"],
+  },
+  {
+    slug: "princeton",
+    nav: "Princeton",
+    h1: "Flower wall rental in Princeton",
+    meta: {
+      title: "Flower Wall Rental Princeton NJ",
+      description:
+        "Flower wall and photo booth rentals in Princeton, NJ — garden weddings, historic inns and university-season events, reached from both delivery hubs.",
+    },
+    lede: "Garden weddings, historic inns and a calendar that moves with the university — Princeton sits in the overlap between both our hubs, so it books like a close town rather than a far one.",
+    sections: [
+      {
+        h: "Historic doorways, modern walls",
+        p: [
+          "Princeton's loveliest venues are also its oldest, which means narrow entries, low door heads and stair turns that defeat anything rigid. Our panels break down to fit through a standard doorway and reassemble inside — ask us before assuming a room is impossible, because it usually is not.",
+          "Tented garden receptions are the other half of the town's calendar. On grass we bring ballast and level the frame properly; a wall that leans two degrees reads as crooked in every photo taken against it.",
+        ],
+      },
+      {
+        h: "Book around the university calendar",
+        p: [
+          "Reunions weekend, commencement and move-in take every hotel room and half the parking in town. If your date falls in those windows, book the wall early and expect an earlier install slot — we would rather be set up before the streets fill than negotiate a loading zone at noon.",
+          "Purity and Earthy suit the town's taste for restrained and garden-adjacent; Greenstreak reads beautifully against stone.",
+        ],
+      },
+    ],
+    events: ["weddings", "corporate", "bridal-showers"],
+  },
+  {
+    slug: "morristown",
+    nav: "Morristown",
+    h1: "Flower wall rental in Morristown",
+    meta: {
+      title: "Flower Wall Rental Morristown NJ",
+      description:
+        "Flower wall and photo booth rentals in Morristown and Morris County — estate venues, hotel ballrooms and corporate events, 30 minutes from our Newark hub.",
+    },
+    lede: "Estate venues, hotel ballrooms and the corporate corridor along Route 24 — Morris County is half an hour from the Newark warehouse and books like it.",
+    sections: [
+      {
+        h: "Estates and ballrooms",
+        p: [
+          "The historic estate venues around the Green have grand rooms and awkward service routes — servants' stairs, gravel drives, doorways built for 1890. We walk the route before the truck is loaded, which is why we ask for the venue name at quote time rather than after.",
+          "Hotel ballrooms in Florham Park, Madison and Whippany are the straightforward version: dock, freight lift, house power. Majestic, Ebony and Crimson Rose hold up under chandelier light where paler walls wash out.",
+        ],
+      },
+      {
+        h: "The corporate corridor",
+        p: [
+          "Morris County's pharma and finance campuses run more weeknight receptions and award dinners than anywhere else we serve. Branded walls, step-and-repeat setups and a booth beside them are the usual ask — and a 6pm install after a working day means we arrive quiet and clear out clean.",
+        ],
+      },
+    ],
+    events: ["corporate", "weddings", "bridal-showers"],
+  },
+  {
+    slug: "red-bank",
+    nav: "Red Bank",
+    h1: "Flower wall rental in Red Bank",
+    meta: {
+      title: "Flower Wall Rental Red Bank NJ",
+      description:
+        "Flower wall and photo booth rentals in Red Bank and Monmouth County — riverfront weddings, downtown restaurants and theatre-district events.",
+    },
+    lede: "Riverfront weddings, downtown restaurant rooms and a theatre-district crowd that shows up dressed — Red Bank is a short run from the Barnegat hub.",
+    sections: [
+      {
+        h: "River light and restaurant rooms",
+        p: [
+          "Navesink-side venues give you water light through the whole golden hour, which flatters the softer walls — Sky Blue, Sunset and Jasmin were made for this stretch of Monmouth County. Riverfront also means breeze: outdoor installs here get the same ballast treatment as a beach.",
+          "Downtown restaurant private rooms are tighter than they look. Most fit an 8ft wall comfortably; a few need the narrower configuration, which we will tell you before you book rather than on the day.",
+        ],
+      },
+      {
+        h: "Monmouth County in one trip",
+        p: [
+          "From Red Bank we cover Rumson, Fair Haven, Middletown, Little Silver and Long Branch inside the same radius, all on Barnegat-hub rates rather than North Jersey ones.",
+        ],
+      },
+    ],
+    events: ["weddings", "birthdays", "bridal-showers"],
+  },
+  {
+    slug: "edison",
+    nav: "Edison",
+    h1: "Flower wall rental in Edison",
+    meta: {
+      title: "Flower Wall Rental Edison NJ",
+      description:
+        "Flower wall and photo booth rentals in Edison and Middlesex County — large banquet halls, multi-day weddings and 300-guest events along the Route 1 corridor.",
+    },
+    lede: "Middlesex County's big banquet halls host the largest guest counts we serve anywhere in New Jersey — and the multi-day celebrations that come with them.",
+    sections: [
+      {
+        h: "Built for big rooms",
+        p: [
+          "A 300-guest hall makes a single 8ft wall look small. Edison bookings more often want the wide configuration, or a wall paired with an arch, so the backdrop holds its own against the room. We will say so at quote time — undersizing the wall for a hall this big is the most common mistake we see.",
+          "Rio, Peacock Butterfly and Pink & Purple Ombre carry saturated colour that reads from across a ballroom; Majestic pairs with gold and mandap staging without competing with it.",
+        ],
+      },
+      {
+        h: "Multi-day events, one install plan",
+        p: [
+          "Celebrations that run across two or three days need the wall in a different room each night, not struck and rebuilt from scratch. Tell us the full schedule up front and we plan the moves as one job — it is cheaper than booking us three times and far less disruptive to the venue.",
+        ],
+      },
+    ],
+    events: ["weddings", "corporate", "birthdays"],
+  },
+  {
+    slug: "new-brunswick",
+    nav: "New Brunswick",
+    h1: "Flower wall rental in New Brunswick",
+    meta: {
+      title: "Flower Wall Rental New Brunswick NJ",
+      description:
+        "Flower wall and photo booth rentals in New Brunswick, NJ — hotel and conference venues, university and hospital galas, and downtown celebrations.",
+    },
+    lede: "Conference hotels, university halls and hospital galas — New Brunswick runs on institutional events, and institutional venues have rules worth knowing before the truck arrives.",
+    sections: [
+      {
+        h: "Loading docks and certificates",
+        p: [
+          "Downtown venues here mean parking decks, service corridors and a security desk that wants paperwork. We carry a certificate of insurance and send it ahead when the venue asks — this is routine for us and it is the thing that most often delays other vendors at the door.",
+          "Freight lift dimensions matter more than room size in this part of town. One photo of the lift is usually all we need to confirm the configuration.",
+        ],
+      },
+      {
+        h: "Galas and graduations",
+        p: [
+          "Spring is fundraiser and graduation season across the university and hospital calendars, and it books out early. Rainbow Wall and Pink Blush do the lighter, celebratory end; Ebony and Majestic suit a black-tie fundraiser without reading like a party.",
+        ],
+      },
+    ],
+    events: ["corporate", "weddings", "birthdays"],
+  },
+  {
+    slug: "cherry-hill",
+    nav: "Cherry Hill",
+    h1: "Flower wall rental in Cherry Hill",
+    meta: {
+      title: "Flower Wall Rental Cherry Hill NJ",
+      description:
+        "Flower wall and photo booth rentals in Cherry Hill and Camden County — country clubs, synagogue celebrations and South Jersey weddings, from our Barnegat hub.",
+    },
+    lede: "Country clubs, synagogue halls and the Philadelphia side of the state — Cherry Hill sits at the far edge of the Barnegat hub's ring, and we plan the day around that honestly.",
+    sections: [
+      {
+        h: "The long-haul truth",
+        p: [
+          "Cherry Hill is the furthest regular run we make, so South Jersey dates get an earlier install slot and a confirmed arrival window rather than a vague morning. We would rather tell you the truck leaves at dawn than have you wonder where it is at ten.",
+          "It also means we prefer to know about a Cherry Hill booking further ahead than a Newark one. Short-notice is possible; it is just not the promise we make down here.",
+        ],
+      },
+      {
+        h: "Clubs, temples and b'nai mitzvah season",
+        p: [
+          "Camden County's country clubs and synagogue social halls run a full calendar of bar and bat mitzvahs alongside the wedding season, and those events want a wall the guest of honour picked themselves. Barbie Wall, Sky Blue and White Pink Blush are the ones thirteen-year-olds actually choose.",
+        ],
+      },
+    ],
+    events: ["birthdays", "weddings", "bridal-showers"],
+  },
+  {
+    slug: "atlantic-city",
+    nav: "Atlantic City",
+    h1: "Flower wall rental in Atlantic City",
+    meta: {
+      title: "Flower Wall Rental Atlantic City NJ",
+      description:
+        "Flower wall and photo booth rentals in Atlantic City — casino ballrooms, convention centre activations and boardwalk weddings, served from our Barnegat hub.",
+    },
+    lede: "Casino ballrooms, convention floors and boardwalk weddings — Atlantic City is the most procedural venue city in the state, and the one we plan earliest for.",
+    sections: [
+      {
+        h: "Casino and convention load-in",
+        p: [
+          "Properties here run real loading docks with scheduled bays, badge requirements, certificates of insurance and in some cases house labour rules about who may push a cart across the floor. None of it is a problem when it is handled a week out; all of it is a problem at 4pm on the day. We do the paperwork as part of the booking.",
+          "Ballroom light is warm and low, which suits the richer walls — Ebony, Majestic and Adonis Blue photograph deeply under chandeliers where pale walls go flat.",
+        ],
+      },
+      {
+        h: "Conventions and brand activations",
+        p: [
+          "Trade show and convention work is its own job: a branded wall, a booth beside it, and a build that must be up before the floor opens and gone before the hall closes. Overnight and pre-dawn installs are normal for us here, and the Barnegat hub is close enough to make them practical.",
+          "Boardwalk and beach ceremonies get the Shore treatment — double ballast, a wind call the day before, and an agreed indoor fallback.",
+        ],
+      },
+    ],
+    events: ["corporate", "weddings", "birthdays"],
   },
 ];
 

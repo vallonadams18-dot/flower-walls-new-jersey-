@@ -10,7 +10,10 @@ export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
     default: "Luxury Flower Wall Rentals in New Jersey",
-    template: `%s | ${SITE.name}`,
+    // Short brand, not SITE.name: page titles already carry their own
+    // keywords, and appending the full legal name pushed titles past 85
+    // characters and duplicated the brand on pages that self-branded.
+    template: "%s | NJ Flower Walls",
   },
   description:
     "Premium flower wall rentals across New Jersey. Over 50 designs for weddings, corporate events and parties.",

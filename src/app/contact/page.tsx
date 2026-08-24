@@ -2,7 +2,7 @@ import { pageMeta } from "@/lib/metadata";
 import { SITE } from "@/lib/site";
 
 export const metadata = pageMeta({
-  title: "Contact & Booking | Flower Wall Rentals New Jersey",
+  title: "Contact & Booking",
   description:
     "Request a quote for flower wall and photo booth rentals in New Jersey. Tell us your date and venue and we'll check availability.",
   path: "/contact/",
