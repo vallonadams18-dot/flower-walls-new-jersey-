@@ -18,47 +18,42 @@ const featured = all.filter((w) => w.price).slice(0, 6);
 export default function Home() {
   return (
     <>
-      {/* HERO — editorial split: copy on ivory, photography carrying the drama */}
+      {/* HERO — the old site's full-width banner artwork, then the SEO block */}
       <section className="border-b border-line">
-        <div className="mx-auto max-w-6xl px-4 py-14 sm:py-20 grid gap-10 lg:grid-cols-2 lg:items-center">
-          <div>
-            <p className="eyebrow">Flower Walls &amp; Photo Booths · New Jersey</p>
-            <h1 className="mt-4 font-[family-name:var(--font-display)] text-[2.6rem] leading-[1.08] sm:text-6xl font-medium">
-              Luxury flower wall rentals in New Jersey
-            </h1>
-            <div className="gold-rule mt-6" />
-            <p className="mt-6 max-w-lg text-lg text-mute leading-relaxed">
-              Over {all.length} handcrafted floral backdrops for weddings,
-              showers, milestone birthdays and brand events — delivered,
-              installed and styled by our team, with photo booth experiences
-              to match.
-            </p>
-            <div className="mt-8 flex flex-wrap gap-3">
-              <Link
-                href="/flower-walls/"
-                className="rounded-full bg-brand px-7 py-3.5 text-white font-medium hover:bg-brand-dark transition-colors"
-              >
-                View Flower Walls
-              </Link>
-              <a
-                href={SITE.booking.collection}
-                className="rounded-full border border-heritage/50 px-7 py-3.5 font-medium text-brand hover:bg-white transition-colors"
-              >
-                Check Availability
-              </a>
-            </div>
-          </div>
-          <div className="overflow-hidden rounded-2xl bg-sage/20 lg:aspect-[4/5] aspect-square">
-            {/* The old site's hero photograph, self-hosted under /legacy */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={asset("/legacy/hero-flower-wall.jpg")}
-              alt="Signature flower wall installation by Flower Walls New Jersey"
-              width={800}
-              height={1000}
-              fetchPriority="high"
-              className="h-full w-full object-cover"
-            />
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={asset("/legacy/hero-flower-wall.jpg")}
+          alt="Take your event to new heights — Flower Wall Rentals New Jersey"
+          width={1900}
+          height={750}
+          fetchPriority="high"
+          className="w-full h-auto"
+        />
+        <div className="mx-auto max-w-6xl px-4 py-12 sm:py-16 text-center">
+          <p className="eyebrow">Flower Walls &amp; Photo Booths · New Jersey</p>
+          <h1 className="mt-4 font-[family-name:var(--font-display)] text-4xl sm:text-5xl font-medium">
+            Luxury flower wall rentals in New Jersey
+          </h1>
+          <div className="gold-rule mt-6 mx-auto" />
+          <p className="mx-auto mt-6 max-w-2xl text-lg text-mute leading-relaxed">
+            Over {all.length} handcrafted floral backdrops for weddings,
+            showers, milestone birthdays and brand events — delivered,
+            installed and styled by our team, with photo booth experiences
+            to match.
+          </p>
+          <div className="mt-8 flex flex-wrap justify-center gap-3">
+            <Link
+              href="/flower-walls/"
+              className="rounded-full bg-brand px-7 py-3.5 text-white font-medium hover:bg-brand-dark transition-colors"
+            >
+              View Flower Walls
+            </Link>
+            <a
+              href={SITE.booking.collection}
+              className="rounded-full border border-heritage/50 px-7 py-3.5 font-medium text-brand hover:bg-white transition-colors"
+            >
+              Check Availability
+            </a>
           </div>
         </div>
       </section>
@@ -98,12 +93,17 @@ export default function Home() {
       {/* SLIDESHOW — the old homepage's photography, swipeable, no JS */}
       <section className="border-b border-line bg-white">
         <div className="mx-auto max-w-6xl px-4 py-12">
-          <p className="eyebrow">From Our Events</p>
+          <h2 className="m-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset("/legacy/title-events-that-bloomed.png")} alt="Events that Bloomed" width={770} height={150} className="h-12 sm:h-16 w-auto" />
+          </h2>
           <div className="mt-5 flex gap-5 overflow-x-auto snap-x snap-mandatory pb-3 [-webkit-overflow-scrolling:touch]">
             {[
-              ["/legacy/hero-flower-wall.jpg", "Signature flower wall installation by Flower Walls New Jersey"],
+              ["/legacy/wedding-first-dance.png", "First dance in front of floral arches with cold spark fountains"],
               ["/legacy/flower-wall-showcase.jpg", "Luxury flower wall backdrop styled for an event"],
               ["/legacy/photo-booth-flower-wall.png", "Photo booth paired with a flower wall backdrop"],
+              ["/legacy/neon-sign-activation.png", "Custom neon sign on a hedge wall at a brand activation"],
+              ["/legacy/event-printing-services.png", "Custom printed banners produced for an event"],
             ].map(([src, alt]) => (
               <div key={src} className="snap-center shrink-0 w-[85%] sm:w-[60%] lg:w-[45%] overflow-hidden rounded-xl bg-sage/20 aspect-[4/3] shadow-sm">
                 {/* eslint-disable-next-line @next/next/no-img-element */}
@@ -116,10 +116,10 @@ export default function Home() {
 
       {/* FEATURED WALLS — the catalog is the star */}
       <section className="mx-auto max-w-6xl px-4 py-16">
-        <p className="eyebrow">The Collection</p>
-        <div className="mt-3 flex items-end justify-between gap-4">
-          <h2 className="font-[family-name:var(--font-display)] text-4xl">
-            Signature flower walls
+        <div className="flex items-end justify-between gap-4">
+          <h2 className="m-0">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src={asset("/legacy/title-featured-flower-walls.png")} alt="Featured Flower Walls" width={770} height={150} className="h-12 sm:h-16 w-auto" />
           </h2>
           <Link href="/flower-walls/" className="text-heritage hover:underline underline-offset-4 shrink-0">
             View all {all.length} →
@@ -191,6 +191,29 @@ export default function Home() {
               >
                 {label}
               </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+
+      {/* ADDITIONAL SERVICES — the old site's section, same title artwork */}
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <h2 className="m-0">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src={asset("/legacy/title-additional-services.png")} alt="Additional Services" width={650} height={150} className="h-12 sm:h-14 w-auto" />
+        </h2>
+        <ul className="mt-6 grid gap-6 sm:grid-cols-3">
+          {[
+            ["Event Rentals", "/event-rentals/", "Backdrops, staging and decor delivered with the wall."],
+            ["Event Branding", "/event-branding/", "Logo walls, step-and-repeats and printed media."],
+            ["Custom Signs", "/custom-signs/", "Neon and acrylic signage made for your event."],
+          ].map(([label, href, blurb]) => (
+            <li key={href} className="rounded-xl border border-line bg-white p-5 shadow-sm hover:shadow-md transition-shadow">
+              <Link href={href} className="font-[family-name:var(--font-display)] text-2xl text-brand hover:text-heritage">
+                {label}
+              </Link>
+              <p className="mt-2 text-mute">{blurb}</p>
             </li>
           ))}
         </ul>

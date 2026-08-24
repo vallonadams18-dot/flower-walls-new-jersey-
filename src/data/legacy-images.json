@@ -1,5 +1,5 @@
 {
- "_note": "The old WordPress homepage's photo content. URLs are the export's real attachment paths (2024/08 and 2026/08 upload folders).",
+ "_note": "The old homepage's photo content, verified clean of any California/Bay Area text. Green gradient title graphics + event photography.",
  "images": [
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2026/08/atlanta-flower-wall-5.-comp.jpg",
@@ -21,39 +21,39 @@
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Featured-Flower-Walls.png",
-   "file": "review-featured-flower-walls.png",
+   "file": "title-featured-flower-walls.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/site-titles.png",
-   "file": "review-site-titles.png",
+   "file": "title-additional-services.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Neon-Signs-San-Francisco-Bay-Area.png",
-   "file": "review-neon-signs.png",
+   "file": "neon-sign-activation.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/event-rentals.png",
-   "file": "review-event-rentals.png",
+   "file": "wedding-first-dance.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/printing-services-for-events-1.png",
-   "file": "review-printing-services.png",
+   "file": "event-printing-services.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   },
   {
    "src": "https://www.flowerwallsnewjersey.com/wp-content/uploads/2024/08/Events-that-bloomed.png",
-   "file": "review-events-that-bloomed.png",
+   "file": "title-events-that-bloomed.png",
    "alt": "",
-   "use": "review"
+   "use": "display"
   }
  ]
 }
