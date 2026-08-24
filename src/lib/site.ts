@@ -57,6 +57,7 @@ export const SERVICE_AREAS = [
 export const NAV = [
   { href: "/flower-walls/", label: "Flower Walls" },
   { href: "/photo-booths/", label: "Photo Booths" },
+  { href: "/gallery/", label: "Gallery" },
   { href: "/packages/", label: "Packages" },
   { href: "/events/", label: "Events" },
   { href: "/locations/", label: "Areas We Serve" },

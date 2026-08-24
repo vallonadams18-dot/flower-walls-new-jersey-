@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { SITE, NAV, FOOTER_NAV } from "@/lib/site";
+import { asset } from "@/lib/asset";
 import { cormorant, inter } from "@/lib/fonts";
 import { JsonLd, businessJsonLd, websiteJsonLd } from "@/lib/jsonld";
 
@@ -25,11 +26,17 @@ export default function RootLayout({
 
         <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-5">
-            <Link
-              href="/"
-              className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-wide text-brand shrink-0"
-            >
-              Flower Walls <span className="text-gold-ink">New Jersey</span>
+            <Link href="/" className="shrink-0" aria-label={`${SITE.name} — home`}>
+              {/* The wordmark is 313x125, so 150px wide keeps it above 2x. */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={asset("/logo.png")}
+                alt={SITE.name}
+                width={313}
+                height={125}
+                fetchPriority="high"
+                className="h-11 sm:h-14 w-auto"
+              />
             </Link>
 
             <nav aria-label="Main" className="hidden lg:flex gap-6 text-[0.92rem] ml-auto">

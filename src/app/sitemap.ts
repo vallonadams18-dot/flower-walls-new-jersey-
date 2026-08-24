@@ -16,6 +16,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/", priority: 1, freq: "weekly" },
     { path: "/flower-walls/", priority: 0.9, freq: "weekly" },
     { path: "/photo-booths/", priority: 0.9, freq: "weekly" },
+    { path: "/gallery/", priority: 0.8, freq: "weekly" },
     { path: "/packages/", priority: 0.85, freq: "monthly" },
     { path: "/events/", priority: 0.6, freq: "monthly" },
     { path: "/locations/", priority: 0.6, freq: "monthly" },
