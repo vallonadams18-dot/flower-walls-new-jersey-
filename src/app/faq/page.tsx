@@ -28,7 +28,7 @@ export default function Faq() {
         </dl>
         <a
           href={SITE.booking.contact}
-          className="mt-10 inline-block rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+          className="mt-10 inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
         >
           Still have a question? Ask us
         </a>

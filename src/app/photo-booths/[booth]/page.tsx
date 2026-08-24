@@ -32,10 +32,10 @@ export default async function BoothPage({ params }: Props) {
           { name: b.name, path: `/photo-booths/${b.slug}/` },
         ])}
       />
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
           <nav aria-label="Breadcrumb" className="text-sm text-ink/60">
-            <Link href="/photo-booths/" className="hover:text-bloom-600">Photo Booths</Link> / {b.name}
+            <Link href="/photo-booths/" className="hover:text-heritage">Photo Booths</Link> / {b.name}
           </nav>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">{b.h1}</h1>
           <p className="mt-4 text-lg text-ink/75">{b.lede}</p>
@@ -51,17 +51,17 @@ export default async function BoothPage({ params }: Props) {
           </section>
         ))}
         <div className="flex flex-wrap gap-3">
-          <a href={SITE.booking.contact} className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors">
+          <a href={SITE.booking.contact} className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">
             Get a quote
           </a>
-          <Link href="/packages/" className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-bloom-50 transition-colors">
+          <Link href="/packages/" className="rounded-full border border-heritage/40 px-6 py-3 font-medium hover:bg-white transition-colors">
             Pair it with a flower wall
           </Link>
         </div>
         <p className="text-sm text-ink/60">
           Also consider: {others.map((o, i) => (
             <span key={o.slug}>
-              <Link href={`/photo-booths/${o.slug}/`} className="text-bloom-600 hover:underline underline-offset-4">{o.name}</Link>
+              <Link href={`/photo-booths/${o.slug}/`} className="text-heritage hover:underline underline-offset-4">{o.name}</Link>
               {i < others.length - 1 ? " · " : ""}
             </span>
           ))}

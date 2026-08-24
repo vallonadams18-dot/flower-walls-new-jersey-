@@ -37,7 +37,7 @@ export default function FlowerWalls() {
         </p>
         <a
           href={SITE.booking.contact}
-          className="mt-6 inline-block rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+          className="mt-6 inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
         >
           Request a quote
         </a>

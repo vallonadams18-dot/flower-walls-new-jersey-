@@ -39,7 +39,7 @@ export default async function ServicePage({ params }: Props) {
           { name: s.nav, path: `/${s.slug}/` },
         ])}
       />
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
           <h1 className="font-[family-name:var(--font-display)] text-4xl">{s.h1}</h1>
           <p className="mt-4 text-lg text-ink/75">{s.lede}</p>
@@ -60,7 +60,7 @@ export default async function ServicePage({ params }: Props) {
 
         <a
           href={SITE.booking[s.cta]}
-          className="inline-block rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+          className="inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
         >
           Request a quote
         </a>

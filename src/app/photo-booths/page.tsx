@@ -31,7 +31,7 @@ export default function PhotoBooths() {
           },
         ]}
       />
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-6xl px-4 py-16">
           <h1 className="font-[family-name:var(--font-display)] text-4xl sm:text-5xl max-w-3xl leading-tight">
             Photo booth rental in New Jersey
@@ -42,10 +42,10 @@ export default function PhotoBooths() {
             wall for the full backdrop-and-booth setup.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
-            <a href={SITE.booking.contact} className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors">
+            <a href={SITE.booking.contact} className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">
               Check availability
             </a>
-            <Link href="/packages/" className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-white transition-colors">
+            <Link href="/packages/" className="rounded-full border border-heritage/40 px-6 py-3 font-medium hover:bg-white transition-colors">
               Flower wall + booth packages
             </Link>
           </div>
@@ -57,12 +57,12 @@ export default function PhotoBooths() {
           {BOOTHS.map((b) => (
             <article key={b.slug}>
               <h2 className="font-[family-name:var(--font-display)] text-2xl">
-                <Link href={`/photo-booths/${b.slug}/`} className="hover:text-bloom-600">
+                <Link href={`/photo-booths/${b.slug}/`} className="hover:text-heritage">
                   {b.name}
                 </Link>
               </h2>
               <p className="mt-2 text-ink/75">{b.lede}</p>
-              <Link href={`/photo-booths/${b.slug}/`} className="mt-3 inline-block text-sm font-medium text-bloom-600 underline-offset-4 hover:underline">
+              <Link href={`/photo-booths/${b.slug}/`} className="mt-3 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline">
                 About the {b.nav.toLowerCase()} →
               </Link>
             </article>
@@ -70,7 +70,7 @@ export default function PhotoBooths() {
         </div>
       </section>
 
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-6xl px-4 py-12">
           <h2 className="font-[family-name:var(--font-display)] text-2xl">
             Every booth includes
@@ -84,7 +84,7 @@ export default function PhotoBooths() {
           <p className="mt-6 text-ink/75 max-w-2xl">
             Booths travel everywhere our flower walls do — the whole of New
             Jersey from our Newark and Barnegat hubs. See{" "}
-            <Link href="/locations/" className="text-bloom-600 hover:underline underline-offset-4">
+            <Link href="/locations/" className="text-heritage hover:underline underline-offset-4">
               areas we serve
             </Link>.
           </p>

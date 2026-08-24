@@ -75,7 +75,7 @@ export default async function WallDetail({ params }: Props) {
       />
 
       <article className="mx-auto max-w-5xl px-4 py-12 grid gap-10 md:grid-cols-2">
-        <div className="overflow-hidden rounded-xl bg-bloom-50">
+        <div className="overflow-hidden rounded-xl bg-ivory">
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={img.src}
@@ -90,7 +90,7 @@ export default async function WallDetail({ params }: Props) {
 
         <div>
           <nav aria-label="Breadcrumb" className="text-sm text-ink/60">
-            <Link href="/flower-walls/" className="hover:text-bloom-600">
+            <Link href="/flower-walls/" className="hover:text-heritage">
               Flower Walls
             </Link>{" "}
             / {w.name}
@@ -110,7 +110,7 @@ export default async function WallDetail({ params }: Props) {
               </h2>
               <ul className="mt-2 flex flex-wrap gap-2">
                 {w.eventUses.map((e) => (
-                  <li key={e} className="rounded-full bg-bloom-50 px-3 py-1 text-sm border border-bloom-100 capitalize">
+                  <li key={e} className="rounded-full bg-ivory px-3 py-1 text-sm border border-line capitalize">
                     {e}
                   </li>
                 ))}
@@ -130,13 +130,13 @@ export default async function WallDetail({ params }: Props) {
           <div className="mt-8 flex flex-wrap gap-3">
             <a
               href={w.price ? w.bookingUrl : SITE.booking.wallEnquiry}
-              className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+              className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
             >
               {w.price ? "Check availability" : "Request a quote"}
             </a>
             <a
               href={SITE.booking.contact}
-              className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-bloom-50 transition-colors"
+              className="rounded-full border border-heritage/40 px-6 py-3 font-medium hover:bg-white transition-colors"
             >
               Ask a question
             </a>
@@ -153,7 +153,7 @@ export default async function WallDetail({ params }: Props) {
             <li key={o.slug}>
               <Link
                 href={`/flower-walls/${o.slug}/`}
-                className="text-bloom-600 hover:underline underline-offset-4"
+                className="text-heritage hover:underline underline-offset-4"
               >
                 {o.name}
               </Link>

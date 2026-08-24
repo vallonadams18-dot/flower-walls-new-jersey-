@@ -20,7 +20,7 @@ export interface Wall {
 export function WallCard({ wall }: { wall: Wall }) {
   const img = wallImage(wall.slug, wall.image);
   const media = (
-    <div className="overflow-hidden rounded-lg bg-bloom-50 aspect-square">
+    <div className="overflow-hidden rounded-lg bg-ivory aspect-square">
       {/* Self-hosted variants once `npm run images` has processed originals;
           CheckCherry's 800px CDN derivative until then. Static export, so no
           Next image server either way. */}
@@ -49,7 +49,7 @@ export function WallCard({ wall }: { wall: Wall }) {
       <div className="mt-3 flex items-baseline justify-between gap-2">
         <h3 className="font-[family-name:var(--font-display)] text-lg">
           {wall.hasDetailPage ? (
-            <Link href={`/flower-walls/${wall.slug}/`} className="hover:text-bloom-600">
+            <Link href={`/flower-walls/${wall.slug}/`} className="hover:text-heritage">
               {wall.name}
             </Link>
           ) : (
@@ -65,7 +65,7 @@ export function WallCard({ wall }: { wall: Wall }) {
       ) : null}
       <a
         href={wall.price ? wall.bookingUrl : SITE.booking.wallEnquiry}
-        className="mt-2 inline-block text-sm font-medium text-bloom-600 underline-offset-4 hover:underline"
+        className="mt-2 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline"
       >
         {wall.price ? "Check availability" : "Request a quote"}
         <span className="sr-only"> for the {wall.name} flower wall</span>

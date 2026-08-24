@@ -49,7 +49,7 @@ export default function About() {
       </p>
       <ul className="mt-5 flex flex-wrap gap-2">
         {SERVICE_AREAS.map((a) => (
-          <li key={a} className="rounded-full bg-bloom-50 px-3 py-1 text-sm border border-bloom-100">
+          <li key={a} className="rounded-full bg-ivory px-3 py-1 text-sm border border-line">
             {a}
           </li>
         ))}
@@ -57,7 +57,7 @@ export default function About() {
 
       <a
         href={SITE.booking.contact}
-        className="mt-10 inline-block rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+        className="mt-10 inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
       >
         Request a quote
       </a>

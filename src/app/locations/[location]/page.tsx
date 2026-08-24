@@ -33,10 +33,10 @@ export default async function LocationPage({ params }: Props) {
           { name: l.nav, path: `/locations/${l.slug}/` },
         ])}
       />
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
           <nav aria-label="Breadcrumb" className="text-sm text-ink/60">
-            <Link href="/locations/" className="hover:text-bloom-600">Areas We Serve</Link> / {l.nav}
+            <Link href="/locations/" className="hover:text-heritage">Areas We Serve</Link> / {l.nav}
           </nav>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">{l.h1}</h1>
           <p className="mt-4 text-lg text-ink/75">{l.lede}</p>
@@ -56,14 +56,14 @@ export default async function LocationPage({ params }: Props) {
           <ul className="mt-3 flex flex-wrap gap-3">
             {evts.map((e) => e && (
               <li key={e.slug}>
-                <Link href={`/events/${e.slug}/`} className="text-bloom-600 hover:underline underline-offset-4">{e.nav}</Link>
+                <Link href={`/events/${e.slug}/`} className="text-heritage hover:underline underline-offset-4">{e.nav}</Link>
               </li>
             ))}
-            <li><Link href="/flower-walls/" className="text-bloom-600 hover:underline underline-offset-4">All flower walls</Link></li>
-            <li><Link href="/packages/" className="text-bloom-600 hover:underline underline-offset-4">Wall + booth packages</Link></li>
+            <li><Link href="/flower-walls/" className="text-heritage hover:underline underline-offset-4">All flower walls</Link></li>
+            <li><Link href="/packages/" className="text-heritage hover:underline underline-offset-4">Wall + booth packages</Link></li>
           </ul>
         </section>
-        <a href={SITE.booking.contact} className="inline-block rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors">
+        <a href={SITE.booking.contact} className="inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">
           Check your date in {l.nav}
         </a>
       </article>

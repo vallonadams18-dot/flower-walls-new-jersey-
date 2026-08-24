@@ -2,12 +2,13 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
 import { SITE, NAV, FOOTER_NAV } from "@/lib/site";
+import { cormorant, inter } from "@/lib/fonts";
 import { JsonLd, businessJsonLd, websiteJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: "Flower Wall Rental New Jersey | Weddings & Events",
+    default: "Luxury Flower Wall Rentals in New Jersey",
     template: `%s | ${SITE.name}`,
   },
   description:
@@ -18,69 +19,135 @@ export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="en">
+    <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={[businessJsonLd(), websiteJsonLd()]} />
 
-        <header className="border-b border-bloom-100 sticky top-0 bg-white/95 backdrop-blur z-50">
-          <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-6">
-            <Link href="/" className="font-[family-name:var(--font-display)] text-lg font-semibold text-bloom-700 shrink-0">
-              Flower Walls <span className="text-leaf-700">New Jersey</span>
+        <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
+          <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-5">
+            <Link
+              href="/"
+              className="font-[family-name:var(--font-display)] text-xl font-semibold tracking-wide text-brand shrink-0"
+            >
+              Flower Walls <span className="text-gold-ink">New Jersey</span>
             </Link>
-            <nav aria-label="Main" className="hidden md:flex gap-5 text-sm ml-auto">
+
+            <nav aria-label="Main" className="hidden lg:flex gap-6 text-[0.92rem] ml-auto">
               {NAV.map((n) => (
-                <Link key={n.href} href={n.href} className="hover:text-bloom-600 transition-colors">
+                <Link
+                  key={n.href}
+                  href={n.href}
+                  className="text-ink/80 hover:text-heritage transition-colors"
+                >
                   {n.label}
                 </Link>
               ))}
             </nav>
+
             <a
               href={SITE.booking.collection}
-              className="ml-auto md:ml-0 shrink-0 rounded-full bg-bloom-600 px-4 py-2 text-sm font-medium text-white hover:bg-bloom-700 transition-colors"
+              className="hidden sm:inline-block ml-auto lg:ml-0 shrink-0 rounded-full bg-brand px-5 py-2.5 text-sm font-medium text-white hover:bg-brand-dark transition-colors"
             >
-              Book Now
+              Check Availability
             </a>
+
+            {/* Mobile menu — <details> keeps it JS-free and crawlable */}
+            <details className="lg:hidden ml-auto sm:ml-0 relative group">
+              <summary
+                className="list-none cursor-pointer rounded-md border border-line px-3 py-2 text-sm select-none"
+                aria-label="Menu"
+              >
+                Menu
+              </summary>
+              <nav
+                aria-label="Mobile"
+                className="absolute right-0 top-full mt-2 w-56 rounded-xl border border-line bg-white p-2 shadow-lg"
+              >
+                {NAV.map((n) => (
+                  <Link
+                    key={n.href}
+                    href={n.href}
+                    className="block rounded-lg px-3 py-2.5 hover:bg-ivory hover:text-heritage transition-colors"
+                  >
+                    {n.label}
+                  </Link>
+                ))}
+                <a
+                  href={SITE.booking.collection}
+                  className="mt-1 block rounded-lg bg-brand px-3 py-2.5 text-center font-medium text-white"
+                >
+                  Check Availability
+                </a>
+              </nav>
+            </details>
           </div>
         </header>
 
         <main className="flex-1">{children}</main>
 
-        <footer className="mt-20 border-t border-bloom-100 bg-bloom-50">
-          <div className="mx-auto max-w-6xl px-4 py-10 grid gap-8 sm:grid-cols-3 text-sm">
+        <footer className="mt-20 bg-brand text-ivory">
+          <div className="mx-auto max-w-6xl px-4 py-12 grid gap-10 sm:grid-cols-3 text-sm">
             <div>
-              <p className="font-[family-name:var(--font-display)] text-base font-semibold text-bloom-700">
-                {SITE.name}
+              <p className="font-[family-name:var(--font-display)] text-2xl">
+                Flower Walls <span className="text-gold">New Jersey</span>
               </p>
-              <p className="mt-2 text-ink/70">
-                Flower wall rentals for weddings, corporate events and celebrations
-                across New Jersey.
+              <div className="gold-rule mt-3" />
+              <p className="mt-4 text-ivory/75 leading-relaxed">
+                Luxury flower wall and photo booth rentals for weddings,
+                celebrations and brand events across New Jersey.
               </p>
+              <a href={SITE.phoneHref} className="mt-4 block text-ivory hover:text-gold transition-colors">
+                {SITE.phone}
+              </a>
             </div>
             <nav aria-label="Footer">
-              <ul className="space-y-1">
+              <p className="eyebrow !text-gold">Explore</p>
+              <ul className="mt-3 space-y-2">
                 {[...NAV, ...FOOTER_NAV].map((n) => (
                   <li key={n.href}>
-                    <Link href={n.href} className="hover:text-bloom-600">{n.label}</Link>
+                    <Link href={n.href} className="text-ivory/80 hover:text-gold transition-colors">
+                      {n.label}
+                    </Link>
                   </li>
                 ))}
               </ul>
             </nav>
-            <div className="space-y-2">
-              <a href={SITE.booking.contact} className="block hover:text-bloom-600">
-                Request a quote
-              </a>
-              <a href={SITE.booking.signIn} className="block hover:text-bloom-600">
-                My account
-              </a>
-              {SITE.phone ? (
-                <a href={SITE.phoneHref} className="block hover:text-bloom-600">{SITE.phone}</a>
-              ) : null}
+            <div>
+              <p className="eyebrow !text-gold">Book</p>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <a href={SITE.booking.contact} className="text-ivory/80 hover:text-gold transition-colors">
+                    Request a quote
+                  </a>
+                </li>
+                <li>
+                  <a href={SITE.booking.collection} className="text-ivory/80 hover:text-gold transition-colors">
+                    Check availability
+                  </a>
+                </li>
+                <li>
+                  <a href={SITE.booking.signIn} className="text-ivory/80 hover:text-gold transition-colors">
+                    My account
+                  </a>
+                </li>
+              </ul>
             </div>
           </div>
-          <div className="border-t border-bloom-100 py-4 text-center text-xs text-ink/60">
-            &copy; {new Date().getFullYear()} {SITE.name}. Serving New Jersey.
+          <div className="border-t border-ivory/15 py-4 text-center text-xs text-ivory/60">
+            &copy; {new Date().getFullYear()} {SITE.name}. Serving all of New Jersey
+            from Newark and Barnegat.
           </div>
         </footer>
+
+        {/* Mobile sticky CTA — out of the way on desktop */}
+        <div className="sm:hidden fixed inset-x-0 bottom-0 z-40 border-t border-line bg-white/95 backdrop-blur p-3">
+          <a
+            href={SITE.booking.collection}
+            className="block rounded-full bg-brand py-3 text-center font-medium text-white"
+          >
+            Check Availability
+          </a>
+        </div>
       </body>
     </html>
   );

@@ -23,20 +23,20 @@ export default function Locations() {
         {LOCATIONS.map((l) => (
           <article key={l.slug}>
             <h2 className="font-[family-name:var(--font-display)] text-2xl">
-              <Link href={`/locations/${l.slug}/`} className="hover:text-bloom-600">{l.nav}</Link>
+              <Link href={`/locations/${l.slug}/`} className="hover:text-heritage">{l.nav}</Link>
             </h2>
             <p className="mt-2 text-ink/75">{l.lede}</p>
-            <Link href={`/locations/${l.slug}/`} className="mt-3 inline-block text-sm font-medium text-bloom-600 underline-offset-4 hover:underline">
+            <Link href={`/locations/${l.slug}/`} className="mt-3 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline">
               {l.nav} details →
             </Link>
           </article>
         ))}
       </div>
-      <div className="mt-12 rounded-xl bg-bloom-50 p-6">
+      <div className="mt-12 rounded-xl bg-ivory p-6">
         <h2 className="font-[family-name:var(--font-display)] text-xl">Not listed? We still come to you.</h2>
         <p className="mt-2 text-ink/75">
           We regularly deliver to {SERVICE_AREAS.join(", ")} and everywhere
-          between. <a href={SITE.booking.contact} className="text-bloom-600 hover:underline underline-offset-4">Ask about your town</a>.
+          between. <a href={SITE.booking.contact} className="text-heritage hover:underline underline-offset-4">Ask about your town</a>.
         </p>
       </div>
     </section>

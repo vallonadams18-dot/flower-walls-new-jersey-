@@ -38,10 +38,10 @@ export default async function EventPage({ params }: Props) {
           faqJsonLd(e.faqs),
         ]}
       />
-      <section className="bg-bloom-50">
+      <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
           <nav aria-label="Breadcrumb" className="text-sm text-ink/60">
-            <Link href="/events/" className="hover:text-bloom-600">Events</Link> / {e.nav}
+            <Link href="/events/" className="hover:text-heritage">Events</Link> / {e.nav}
           </nav>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">{e.h1}</h1>
           <p className="mt-4 text-lg text-ink/75">{e.lede}</p>
@@ -77,8 +77,8 @@ export default async function EventPage({ params }: Props) {
           ))}
         </dl>
         <div className="mt-8 flex flex-wrap gap-3">
-          <a href={SITE.booking.contact} className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors">Get a quote</a>
-          <Link href="/packages/" className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-bloom-50 transition-colors">Add a photo booth</Link>
+          <a href={SITE.booking.contact} className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">Get a quote</a>
+          <Link href="/packages/" className="rounded-full border border-heritage/40 px-6 py-3 font-medium hover:bg-white transition-colors">Add a photo booth</Link>
         </div>
       </section>
     </>

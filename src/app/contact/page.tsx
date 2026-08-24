@@ -22,13 +22,13 @@ export default function Contact() {
       <div className="mt-8 flex flex-wrap gap-3">
         <a
           href={SITE.booking.contact}
-          className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors"
+          className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
         >
           Request a quote
         </a>
         <a
           href={SITE.booking.collection}
-          className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-bloom-50 transition-colors"
+          className="rounded-full border border-heritage/40 px-6 py-3 font-medium hover:bg-white transition-colors"
         >
           Check availability online
         </a>
@@ -36,7 +36,7 @@ export default function Contact() {
 
       {SITE.phone ? (
         <p className="mt-8 text-ink/80">
-          Prefer to talk? Call <a className="text-bloom-600 underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>.
+          Prefer to talk? Call <a className="text-heritage underline underline-offset-4" href={SITE.phoneHref}>{SITE.phone}</a>.
         </p>
       ) : null}
     </article>

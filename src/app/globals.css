@@ -1,15 +1,42 @@
 @import "tailwindcss";
 
 @theme {
-  --color-bloom-50: #fdf5f7;
-  --color-bloom-100: #fae8ee;
-  --color-bloom-300: #eeb0c4;
-  --color-bloom-600: #b4527a;
-  --color-bloom-700: #8f3f60;
-  --color-leaf-700: #2f5d3f;
-  --color-ink: #1c1618;
-  --font-display: Georgia, "Times New Roman", serif;
+  /* Modern Botanical Luxury — Flower Walls New Jersey brand system.
+     Ratio to hold: ~70% ivory/white, 20-25% greens, <=5% gold. */
+  --color-brand: #173f35;       /* deep botanical green — primary */
+  --color-brand-dark: #0f2b24;  /* hover/pressed */
+  --color-heritage: #356859;    /* secondary green — links, icons, hovers */
+  --color-sage: #a8b9a5;        /* soft sage — sparing tints only */
+  --color-ivory: #faf8f2;       /* warm ivory — primary page background */
+  --color-gold: #c3a66b;        /* champagne — borders, rules, small accents */
+  --color-gold-ink: #8f7439;    /* gold darkened for small text (contrast) */
+  --color-ink: #202522;         /* body text — charcoal, not pure black */
+  --color-mute: #68716c;        /* secondary text */
+  --color-line: #e6e1d4;        /* hairlines on ivory */
+
+  --font-display: var(--font-cormorant), Georgia, "Times New Roman", serif;
+  --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
 }
 
 html { scroll-behavior: smooth; }
-body { color: var(--color-ink); background: #fff; }
+body {
+  color: var(--color-ink);
+  background: var(--color-ivory);
+  font-family: var(--font-sans);
+}
+
+/* Editorial eyebrow — champagne, tracked-out small caps */
+.eyebrow {
+  font-size: 0.72rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--color-gold-ink);
+  font-weight: 600;
+}
+
+/* Thin champagne rule used under select headings */
+.gold-rule {
+  width: 3.5rem;
+  height: 1px;
+  background: var(--color-gold);
+}

@@ -22,10 +22,10 @@ export default function Events() {
         {EVENTS.map((e) => (
           <article key={e.slug}>
             <h2 className="font-[family-name:var(--font-display)] text-2xl">
-              <Link href={`/events/${e.slug}/`} className="hover:text-bloom-600">{e.nav}</Link>
+              <Link href={`/events/${e.slug}/`} className="hover:text-heritage">{e.nav}</Link>
             </h2>
             <p className="mt-2 text-ink/75">{e.lede}</p>
-            <Link href={`/events/${e.slug}/`} className="mt-3 inline-block text-sm font-medium text-bloom-600 underline-offset-4 hover:underline">
+            <Link href={`/events/${e.slug}/`} className="mt-3 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline">
               {e.nav} details →
             </Link>
           </article>
