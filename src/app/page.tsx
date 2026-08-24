@@ -85,6 +85,46 @@ export default function Home() {
 
       <section className="bg-bloom-50">
         <div className="mx-auto max-w-6xl px-4 py-14">
+          <h2 className="font-[family-name:var(--font-display)] text-3xl">
+            Photo booth rental in New Jersey
+          </h2>
+          <p className="mt-3 max-w-2xl text-ink/75">
+            Six booth experiences — mirror, 360, glam, digital, video and
+            branded — each delivered with an attendant, props and instant
+            sharing. Run one alone or pair it with your wall.
+          </p>
+          <div className="mt-5 flex flex-wrap gap-3">
+            <Link href="/photo-booths/" className="rounded-full bg-bloom-600 px-6 py-3 text-white font-medium hover:bg-bloom-700 transition-colors">
+              Explore photo booths
+            </Link>
+            <Link href="/packages/" className="rounded-full border border-bloom-300 px-6 py-3 font-medium hover:bg-white transition-colors">
+              Wall + booth packages
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      <section className="mx-auto max-w-6xl px-4 py-14">
+        <h2 className="font-[family-name:var(--font-display)] text-2xl">Styled for your event</h2>
+        <ul className="mt-4 flex flex-wrap gap-3">
+          {[
+            ["Weddings", "/events/weddings/"],
+            ["Birthdays & Sweet 16s", "/events/birthdays/"],
+            ["Baby Showers", "/events/baby-showers/"],
+            ["Bridal Showers", "/events/bridal-showers/"],
+            ["Corporate & Activations", "/events/corporate/"],
+          ].map(([label, href]) => (
+            <li key={href}>
+              <Link href={href} className="rounded-full border border-bloom-100 bg-bloom-50 px-4 py-2 text-sm hover:border-bloom-300 transition-colors inline-block">
+                {label}
+              </Link>
+            </li>
+          ))}
+        </ul>
+      </section>
+
+      <section className="bg-bloom-50">
+        <div className="mx-auto max-w-6xl px-4 py-14">
           <h2 className="font-[family-name:var(--font-display)] text-2xl">
             Where we deliver
           </h2>
@@ -95,14 +135,14 @@ export default function Home() {
             spent in and around these towns:
           </p>
           <ul className="mt-5 flex flex-wrap gap-2">
-            {SERVICE_AREAS.map((a) => (
-              <li
-                key={a}
-                className="rounded-full bg-white px-3 py-1 text-sm border border-bloom-100"
-              >
-                {a}
-              </li>
-            ))}
+            {SERVICE_AREAS.map((a) => {
+              const slug = ({"Jersey City":"jersey-city",Newark:"newark",Hoboken:"hoboken",Montclair:"montclair"} as Record<string,string>)[a];
+              return (
+                <li key={a} className="rounded-full bg-white px-3 py-1 text-sm border border-bloom-100">
+                  {slug ? <Link href={`/locations/${slug}/`} className="hover:text-bloom-600">{a}</Link> : a}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>

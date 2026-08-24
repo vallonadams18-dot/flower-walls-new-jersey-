@@ -19,40 +19,6 @@ export interface ServicePage {
 
 export const SERVICES: ServicePage[] = [
   {
-    slug: "photo-booth-rental-new-jersey",
-    nav: "Photo Booths",
-    h1: "Photo booth rental in New Jersey",
-    meta: {
-      title: "Photo Booth Rental New Jersey | Weddings & Corporate",
-      description:
-        "Modern photo booth rentals in New Jersey. Mirror booths, enclosed booths and 360 booths for weddings, corporate events and private parties.",
-    },
-    lede: "Mirror, enclosed and 360 booths, delivered with an attendant who stays for the whole event.",
-    sections: [
-      {
-        h: "Booths that suit the room",
-        p: [
-          "A ballroom in Morristown and a loft in Jersey City need different equipment. Open-air mirror booths work where there is floor space and a decent backdrop. Enclosed booths suit tighter venues and crowds that want a bit of privacy. A 360 booth needs clearance on all sides and a ceiling that will take the lighting.",
-          "We ask about the room before recommending anything, because the wrong booth in the right venue still produces a queue nobody joins.",
-        ],
-      },
-      {
-        h: "What is included",
-        p: [
-          "Delivery, setup, an attendant for the duration, unlimited sessions, instant prints and a digital gallery afterwards. Props and custom print templates are included rather than upsold.",
-          "Setup takes about an hour. We arrive early enough that the booth is running before your first guest walks in, and we break down after the last one leaves.",
-        ],
-      },
-      {
-        h: "Pairing a booth with a flower wall",
-        p: [
-          "Most of our bookings are both. A flower wall gives the booth a backdrop that matches the event styling rather than a generic curtain, and the same team sets up both in one visit.",
-        ],
-      },
-    ],
-    cta: "contact",
-  },
-  {
     slug: "event-rentals",
     nav: "Event Rentals",
     h1: "Event rentals in New Jersey",
@@ -129,39 +95,6 @@ export const SERVICES: ServicePage[] = [
         h: "Ordering",
         p: [
           "Custom signs take roughly three weeks. Send the wording and any font preference and we will mock it up before anything is manufactured.",
-        ],
-      },
-    ],
-    cta: "contact",
-  },
-  {
-    slug: "corporate-events",
-    nav: "Corporate",
-    h1: "Corporate flower wall rentals in New Jersey",
-    meta: {
-      title: "Corporate Flower Wall Rentals New Jersey",
-      description:
-        "Corporate flower wall rentals in New Jersey for brand activations, launches and conferences. Custom logo walls and step-and-repeat backdrops.",
-    },
-    lede: "Brand activations, product launches, conferences and holiday parties across the state.",
-    sections: [
-      {
-        h: "Working with corporate timelines",
-        p: [
-          "Corporate events run on procurement schedules, certificates of insurance and venue compliance paperwork. We are set up for all three and can usually turn a COI around the same day.",
-          "For multi-day conferences we can leave the installation in place and return for breakdown, rather than charging a fresh setup each morning.",
-        ],
-      },
-      {
-        h: "Logo walls",
-        p: [
-          "A floral wall with the company mark set into it photographs far better than a vinyl step-and-repeat, and guests actually queue for it. That is the point — an activation only works if people want to stand in front of it.",
-        ],
-      },
-      {
-        h: "Venues we know",
-        p: [
-          "We work regularly across Jersey City and Newark hotel ballrooms, Princeton conference space, and the pharmaceutical and financial campuses along the 287 and Route 1 corridors. If you tell us the venue we can usually tell you the load-in.",
         ],
       },
     ],

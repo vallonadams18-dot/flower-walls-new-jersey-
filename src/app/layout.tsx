@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import "./globals.css";
-import { SITE, NAV } from "@/lib/site";
+import { SITE, NAV, FOOTER_NAV } from "@/lib/site";
 import { JsonLd, businessJsonLd, websiteJsonLd } from "@/lib/jsonld";
 
 export const metadata: Metadata = {
@@ -58,7 +58,7 @@ export default function RootLayout({
             </div>
             <nav aria-label="Footer">
               <ul className="space-y-1">
-                {NAV.map((n) => (
+                {[...NAV, ...FOOTER_NAV].map((n) => (
                   <li key={n.href}>
                     <Link href={n.href} className="hover:text-bloom-600">{n.label}</Link>
                   </li>

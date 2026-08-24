@@ -56,12 +56,18 @@ export const SERVICE_AREAS = [
 
 export const NAV = [
   { href: "/flower-walls/", label: "Flower Walls" },
-  { href: "/photo-booth-rental-new-jersey/", label: "Photo Booths" },
+  { href: "/photo-booths/", label: "Photo Booths" },
+  { href: "/packages/", label: "Packages" },
+  { href: "/events/", label: "Events" },
+  { href: "/locations/", label: "Areas We Serve" },
+  { href: "/about/", label: "About" },
+  { href: "/contact/", label: "Get a Quote" },
+] as const;
+
+/** Secondary pages linked from the footer, not the main nav. */
+export const FOOTER_NAV = [
   { href: "/event-rentals/", label: "Event Rentals" },
   { href: "/event-branding/", label: "Event Branding" },
   { href: "/custom-signs/", label: "Custom Signs" },
-  { href: "/corporate-events/", label: "Corporate" },
-  { href: "/about/", label: "About" },
   { href: "/faq/", label: "FAQ" },
-  { href: "/contact/", label: "Contact" },
 ] as const;
