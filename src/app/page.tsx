@@ -32,7 +32,8 @@ export default function Home() {
             <p className="mt-6 max-w-lg text-lg text-mute leading-relaxed">
               Over {all.length} handcrafted floral backdrops for weddings,
               showers, milestone birthdays and brand events — delivered,
-              installed and styled to your venue by our team.
+              installed and styled by our team, with photo booth experiences
+              to match.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
@@ -77,6 +78,21 @@ export default function Home() {
               <p className="mt-2 text-mute leading-relaxed">{p}</p>
             </div>
           ))}
+        </div>
+      </section>
+
+
+      {/* EXPERIENCE BAND — booths introduced early, walls still the hero */}
+      <section className="border-b border-line">
+        <div className="mx-auto max-w-6xl px-4 py-8 flex flex-wrap items-center justify-center gap-x-3 gap-y-2 text-center">
+          <span className="font-[family-name:var(--font-display)] text-xl sm:text-2xl">Beautiful backdrop</span>
+          <span className="text-gold" aria-hidden>+</span>
+          <span className="font-[family-name:var(--font-display)] text-xl sm:text-2xl">Interactive photo booth</span>
+          <span className="text-gold" aria-hidden>+</span>
+          <span className="font-[family-name:var(--font-display)] text-xl sm:text-2xl">Shareable memories</span>
+          <Link href="/packages/" className="ml-2 text-sm text-heritage hover:underline underline-offset-4 whitespace-nowrap">
+            See how packages work →
+          </Link>
         </div>
       </section>
 

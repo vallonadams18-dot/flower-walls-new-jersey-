@@ -27,7 +27,8 @@ export default function FlowerWalls() {
       />
 
       <section className="mx-auto max-w-6xl px-4 pt-14 pb-8">
-        <h1 className="font-[family-name:var(--font-display)] text-4xl">
+        <p className="eyebrow">The Collection</p>
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">
           Our flower wall collection
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-ink/75">

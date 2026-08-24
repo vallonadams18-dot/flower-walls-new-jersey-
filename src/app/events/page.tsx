@@ -12,7 +12,8 @@ export const metadata = pageMeta({
 export default function Events() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-14">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl">Events we style</h1>
+      <p className="eyebrow">Styled For</p>
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">Events we style</h1>
       <p className="mt-4 max-w-2xl text-lg text-ink/75">
         Every event photographs differently. These pages cover how the walls
         and booths work for each one — which designs suit it, and the logistics

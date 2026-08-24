@@ -13,7 +13,8 @@ export const metadata = pageMeta({
 export default function Locations() {
   return (
     <section className="mx-auto max-w-6xl px-4 py-14">
-      <h1 className="font-[family-name:var(--font-display)] text-4xl">Areas we serve</h1>
+      <p className="eyebrow">Areas We Serve</p>
+      <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">Areas we serve</h1>
       <p className="mt-4 max-w-2xl text-lg text-ink/75">
         Two delivery hubs — Newark for North and Central Jersey, Barnegat for
         the Shore and South Jersey — each covering a 50-mile radius. Between
