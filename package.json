@@ -8,7 +8,9 @@
     "start": "next start",
     "lint": "eslint",
     "images": "node scripts/build-wall-images.mjs",
-    "audit": "node scripts/audit-export.mjs"
+    "audit": "node scripts/audit-export.mjs",
+    "postbuild": "node scripts/write-redirects.mjs",
+    "cutover": "node scripts/audit-cutover.mjs"
   },
   "dependencies": {
     "next": "16.3.1",

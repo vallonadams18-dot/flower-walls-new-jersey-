@@ -1,6 +1,7 @@
 import { pageMeta } from "@/lib/metadata";
 import { JsonLd, faqJsonLd } from "@/lib/jsonld";
 import { FAQS } from "@/data/faqs";
+import Link from "next/link";
 import { SITE } from "@/lib/site";
 
 export const metadata = pageMeta({
@@ -26,6 +27,31 @@ export default function Faq() {
             </div>
           ))}
         </dl>
+        {/* Three of these questions have a full guide behind them. Linking
+            them here is where a reader actually wants them, and it gives the
+            guides an entry point from content rather than only the footer. */}
+        <section className="mt-12 border-t border-line pt-8">
+          <h2 className="font-[family-name:var(--font-display)] text-2xl">
+            Longer answers
+          </h2>
+          <ul className="mt-4 space-y-2">
+            <li>
+              <Link href="/blog/what-size-flower-wall-do-i-need/" className="text-heritage hover:underline underline-offset-4">
+                What size flower wall do you actually need?
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/certificate-of-insurance-nj-venues/" className="text-heritage hover:underline underline-offset-4">
+                Your New Jersey venue asked for a COI. What now?
+              </Link>
+            </li>
+            <li>
+              <Link href="/blog/what-decides-flower-wall-cost/" className="text-heritage hover:underline underline-offset-4">
+                What actually decides the cost of a flower wall rental
+              </Link>
+            </li>
+          </ul>
+        </section>
         <a
           href={SITE.booking.contact}
           className="mt-10 inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"

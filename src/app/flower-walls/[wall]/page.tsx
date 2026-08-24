@@ -29,7 +29,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const w = bySlug(wall);
   if (!w) return {};
   return pageMeta({
-    title: `${displayName(w.name)} Flower Wall Rental | New Jersey`,
+    // No "| New Jersey" here — the sitewide template already appends
+    // "| NJ Flower Walls", and the pair read as "New Jersey | NJ ...".
+    title: `${displayName(w.name)} Flower Wall Rental`,
     description: `${w.description?.slice(0, 150) ?? ""}`.trim(),
     path: `/flower-walls/${w.slug}/`,
     image: w.image,

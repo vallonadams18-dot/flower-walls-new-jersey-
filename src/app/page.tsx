@@ -6,6 +6,8 @@ import { pageMeta } from "@/lib/metadata";
 import { asset } from "@/lib/asset";
 import { Slideshow } from "@/components/Slideshow";
 import { EVENT_SLIDES } from "@/data/event-slides";
+import { POSTS } from "@/data/posts";
+import { LOCATIONS } from "@/data/locations";
 
 export const metadata = pageMeta({
   title: "Luxury Flower Wall Rentals in New Jersey",
@@ -248,13 +250,16 @@ export default function Home() {
           the Shore and South Jersey — each covering a 50-mile radius. Travel
           is quoted before you book, never after.
         </p>
+        {/* Linked from the location data rather than a hardcoded list of four.
+            Eight of these areas had pages but rendered as plain text. Barnegat
+            stays unlinked on purpose — it is a delivery hub, not a market. */}
         <ul className="mt-6 flex flex-wrap gap-2.5">
           {SERVICE_AREAS.map((a) => {
-            const slug = ({ "Jersey City": "jersey-city", Newark: "newark", Hoboken: "hoboken", Montclair: "montclair" } as Record<string, string>)[a];
+            const loc = LOCATIONS.find((l) => l.nav === a);
             return (
               <li key={a} className="rounded-full border border-line bg-white px-4 py-1.5 text-sm">
-                {slug ? (
-                  <Link href={`/locations/${slug}/`} className="hover:text-heritage">{a}</Link>
+                {loc ? (
+                  <Link href={`/locations/${loc.slug}/`} className="hover:text-heritage">{a}</Link>
                 ) : (
                   a
                 )}
@@ -265,6 +270,38 @@ export default function Home() {
         <Link href="/locations/" className="mt-6 inline-block text-heritage hover:underline underline-offset-4">
           All service areas →
         </Link>
+      </section>
+
+      {/* Guides. The blog was reachable only from the footer, which left the
+          whole cluster outside the site's content link graph. */}
+      <section className="bg-ivory border-t border-line">
+        <div className="mx-auto max-w-6xl px-4 py-14">
+          <p className="eyebrow">Before You Book</p>
+          <h2 className="mt-3 font-[family-name:var(--font-display)] text-3xl">
+            Questions worth answering first
+          </h2>
+          <p className="mt-3 text-mute max-w-2xl leading-relaxed">
+            What size wall a room actually needs, what a venue means when it
+            asks for a certificate of insurance, and what moves a quote up or
+            down. Written from delivering across New Jersey every weekend.
+          </p>
+          <ul className="mt-6 grid gap-4 sm:grid-cols-3">
+            {POSTS.slice(0, 3).map((p) => (
+              <li key={p.slug}>
+                <Link
+                  href={`/blog/${p.slug}/`}
+                  className="font-[family-name:var(--font-display)] text-lg hover:text-heritage transition-colors"
+                >
+                  {p.title}
+                </Link>
+                <p className="mt-1 text-sm text-mute leading-relaxed">{p.dek}</p>
+              </li>
+            ))}
+          </ul>
+          <Link href="/blog/" className="mt-6 inline-block text-heritage hover:underline underline-offset-4">
+            All guides →
+          </Link>
+        </div>
       </section>
     </>
   );

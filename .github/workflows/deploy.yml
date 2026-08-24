@@ -24,9 +24,32 @@ jobs:
           node-version: 22
           cache: npm
       - run: npm ci
+
+      # The cutover switch.
+      #
+      # Set a repository variable named PRODUCTION_DOMAIN (Settings →
+      # Secrets and variables → Actions → Variables) to
+      # www.flowerwallsnewjersey.com when the domain is ready to move.
+      #
+      # Unset  → preview build, served from /flower-walls-new-jersey-/ on
+      #          github.io, no custom domain.
+      # Set    → production build, served from the root of the custom domain,
+      #          with the CNAME file GitHub Pages needs to hold that domain.
+      #
+      # Flipping it back to unset reverts to the preview. No code change,
+      # nothing destructive, one setting.
       - run: npm run build
         env:
-          BASE_PATH: /flower-walls-new-jersey-
+          BASE_PATH: ${{ vars.PRODUCTION_DOMAIN == '' && '/flower-walls-new-jersey-' || '' }}
+
+      - name: Write CNAME for the custom domain
+        if: vars.PRODUCTION_DOMAIN != ''
+        run: echo "${{ vars.PRODUCTION_DOMAIN }}" > ./out/CNAME
+
+      - name: Fail the build if the export is not cutover-ready
+        if: vars.PRODUCTION_DOMAIN != ''
+        run: node scripts/audit-cutover.mjs
+
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v3
         with:

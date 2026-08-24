@@ -54,8 +54,10 @@ for (const f of files) {
 
 /** Next's own error pages — not content, and not orphans. */
 const FRAMEWORK = new Set(["/404.html", "/404/", "/_not-found/"]);
-for (const url of [...pages.keys()]) {
+for (const [url, { html }] of [...pages.entries()]) {
+  // Framework error pages, and the redirect stubs, are not content.
   if (FRAMEWORK.has(url) || url.includes("/_next/")) pages.delete(url);
+  else if (/<meta http-equiv="refresh"/i.test(html)) pages.delete(url);
 }
 
 const known = new Set(pages.keys());
