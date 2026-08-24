@@ -67,6 +67,7 @@ export const NAV = [
 
 /** Secondary pages linked from the footer, not the main nav. */
 export const FOOTER_NAV = [
+  { href: "/blog/", label: "Guides" },
   { href: "/event-rentals/", label: "Event Rentals" },
   { href: "/event-branding/", label: "Event Branding" },
   { href: "/custom-signs/", label: "Custom Signs" },

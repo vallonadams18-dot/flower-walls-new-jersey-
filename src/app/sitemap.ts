@@ -5,6 +5,7 @@ import { BOOTHS } from "@/data/booths";
 import { EVENTS } from "@/data/events";
 import { LOCATIONS } from "@/data/locations";
 import { COMBOS } from "@/data/combos";
+import { POSTS } from "@/data/posts";
 import walls from "@/data/walls.json";
 
 export const dynamic = "force-static";
@@ -24,6 +25,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/about/", priority: 0.5, freq: "monthly" },
     { path: "/faq/", priority: 0.6, freq: "monthly" },
     { path: "/contact/", priority: 0.7, freq: "monthly" },
+    { path: "/blog/", priority: 0.7, freq: "weekly" },
+    ...POSTS.map((p) => ({ path: `/blog/${p.slug}/`, priority: 0.6, freq: "monthly" as const })),
     ...SERVICES.map((s) => ({ path: `/${s.slug}/`, priority: 0.6, freq: "monthly" as const })),
     ...BOOTHS.map((b) => ({ path: `/photo-booths/${b.slug}/`, priority: 0.75, freq: "monthly" as const })),
     ...EVENTS.map((e) => ({ path: `/events/${e.slug}/`, priority: 0.75, freq: "monthly" as const })),
