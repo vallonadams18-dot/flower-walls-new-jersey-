@@ -184,8 +184,7 @@
     "palette": [
       "blue"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "cee-indigo",

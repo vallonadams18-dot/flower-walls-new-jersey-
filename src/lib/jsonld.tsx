@@ -1,5 +1,6 @@
 import { SITE, SERVICE_AREAS, COVERAGE_HUBS } from "./site";
 import walls from "@/data/walls.json";
+import { displayName } from "@/data/wall-renames";
 
 type JsonLd = Record<string, unknown>;
 
@@ -77,7 +78,7 @@ export function catalogJsonLd(): JsonLd {
       position: i + 1,
       item: {
         "@type": "Product",
-        name: `${w.name} flower wall`,
+        name: `${displayName(w.name)} flower wall`,
         image: w.image,
         url: `${SITE.url}/flower-walls/#${w.slug}`,
       },

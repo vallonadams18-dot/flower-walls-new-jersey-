@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { wallImage } from "@/lib/wallImage";
+import { displayName } from "@/data/wall-renames";
 
 export interface Wall {
   slug: string;
@@ -27,6 +28,7 @@ export interface Wall {
  */
 export function WallCard({ wall }: { wall: Wall }) {
   const img = wallImage(wall.slug, wall.image);
+  const name = displayName(wall.name);
   const href = wall.hasDetailPage
     ? `/flower-walls/${wall.slug}/`
     : wall.bookingUrl;
@@ -43,7 +45,7 @@ export function WallCard({ wall }: { wall: Wall }) {
           src={img.src}
           srcSet={img.srcset}
           sizes="(min-width: 1024px) 25vw, 50vw"
-          alt={`${wall.name} flower wall rental in New Jersey`}
+          alt={`${name} flower wall rental in New Jersey`}
           width={800}
           height={800}
           loading="lazy"
@@ -52,14 +54,14 @@ export function WallCard({ wall }: { wall: Wall }) {
         />
       </div>
       <h3 className="mt-3 font-[family-name:var(--font-display)] text-lg group-hover:text-heritage transition-colors">
-        {wall.name}
+        {name}
       </h3>
       {wall.description ? (
         <p className="mt-1 text-sm text-ink/70 line-clamp-2">{wall.description}</p>
       ) : null}
       <span className="mt-2 inline-block text-sm font-medium text-heritage underline-offset-4 group-hover:underline">
         {cta}
-        <span className="sr-only"> for the {wall.name} flower wall</span>
+        <span className="sr-only"> for the {name} flower wall</span>
       </span>
     </>
   );

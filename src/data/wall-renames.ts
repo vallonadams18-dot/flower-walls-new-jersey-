@@ -12,6 +12,8 @@
 export const WALL_RENAMES: Record<string, string> = {
   // package 61452 — a deep red rose wall, carried over from the Atlanta brand
   Atlanta: "Crimson Rose",
+  // package 173193 — shouted in the catalogue, set in sentence case here
+  "BLUE OCEAN": "Blue Ocean",
 };
 
 export const displayName = (name: string) => WALL_RENAMES[name] ?? name;

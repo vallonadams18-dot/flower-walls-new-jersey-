@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import walls from "@/data/walls.json";
+import { displayName } from "@/data/wall-renames";
 import { type Wall } from "@/components/WallCard";
 import { pageMeta } from "@/lib/metadata";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
@@ -27,11 +28,11 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const w = bySlug(wall);
   if (!w) return {};
   return pageMeta({
-    title: `${w.name} Flower Wall Rental | New Jersey`,
+    title: `${displayName(w.name)} Flower Wall Rental | New Jersey`,
     description: `${w.description?.slice(0, 150) ?? ""}`.trim(),
     path: `/flower-walls/${w.slug}/`,
     image: w.image,
-    imageAlt: `${w.name} flower wall rental in New Jersey`,
+    imageAlt: `${displayName(w.name)} flower wall rental in New Jersey`,
   });
 }
 
@@ -50,12 +51,12 @@ export default async function WallDetail({ params }: Props) {
           breadcrumbJsonLd([
             { name: "Home", path: "/" },
             { name: "Flower Walls", path: "/flower-walls/" },
-            { name: w.name, path: `/flower-walls/${w.slug}/` },
+            { name: displayName(w.name), path: `/flower-walls/${w.slug}/` },
           ]),
           {
             "@context": "https://schema.org",
             "@type": "Product",
-            name: `${w.name} flower wall`,
+            name: `${displayName(w.name)} flower wall`,
             image: w.image,
             description: w.description,
             url: `${SITE.url}/flower-walls/${w.slug}/`,
@@ -73,7 +74,7 @@ export default async function WallDetail({ params }: Props) {
             src={img.src}
             srcSet={img.srcset}
             sizes="(min-width: 768px) 50vw, 100vw"
-            alt={`${w.name} flower wall rental in New Jersey`}
+            alt={`${displayName(w.name)} flower wall rental in New Jersey`}
             width={800}
             height={800}
             className="w-full h-auto object-cover"
@@ -85,10 +86,10 @@ export default async function WallDetail({ params }: Props) {
             <Link href="/flower-walls/" className="hover:text-heritage">
               Flower Walls
             </Link>{" "}
-            / {w.name}
+            / {displayName(w.name)}
           </nav>
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">
-            {w.name} flower wall
+            {displayName(w.name)} flower wall
           </h1>
           <p className="mt-5 text-ink/80 leading-relaxed">{w.description}</p>
 
@@ -144,7 +145,7 @@ export default async function WallDetail({ params }: Props) {
                 href={`/flower-walls/${o.slug}/`}
                 className="text-heritage hover:underline underline-offset-4"
               >
-                {o.name}
+                {displayName(o.name)}
               </Link>
             </li>
           ))}
