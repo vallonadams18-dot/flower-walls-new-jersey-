@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { SITE } from "@/lib/site";
 import { wallImage } from "@/lib/wallImage";
 
 export interface Wall {
@@ -17,59 +16,65 @@ export interface Wall {
   hasDetailPage?: boolean;
 }
 
+/**
+ * A wall in a grid. The whole card is one link: photograph and name both lead
+ * to the wall's own page where it has one, and straight into its CheckCherry
+ * booking flow where it does not. Every wall in walls.json carries a
+ * bookingUrl, so no card is ever a dead end.
+ *
+ * No price is shown. `price` stays on the record because the catalogue data
+ * carries it, but nothing on the site renders it.
+ */
 export function WallCard({ wall }: { wall: Wall }) {
   const img = wallImage(wall.slug, wall.image);
-  const media = (
-    <div className="overflow-hidden rounded-lg bg-ivory aspect-square">
-      {/* Self-hosted variants once `npm run images` has processed originals;
-          CheckCherry's 800px CDN derivative until then. Static export, so no
-          Next image server either way. */}
-      {/* eslint-disable-next-line @next/next/no-img-element */}
-      <img
-        src={img.src}
-        srcSet={img.srcset}
-        sizes="(min-width: 1024px) 25vw, 50vw"
-        alt={`${wall.name} flower wall rental in New Jersey`}
-        width={800}
-        height={800}
-        loading="lazy"
-        decoding="async"
-        className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
-      />
-    </div>
+  const href = wall.hasDetailPage
+    ? `/flower-walls/${wall.slug}/`
+    : wall.bookingUrl;
+  const cta = wall.hasDetailPage ? "View details" : "Check availability";
+
+  const inner = (
+    <>
+      <div className="overflow-hidden rounded-lg bg-ivory aspect-square">
+        {/* Self-hosted variants once `npm run images` has processed originals;
+            CheckCherry's 800px CDN derivative until then. Static export, so no
+            Next image server either way. */}
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src={img.src}
+          srcSet={img.srcset}
+          sizes="(min-width: 1024px) 25vw, 50vw"
+          alt={`${wall.name} flower wall rental in New Jersey`}
+          width={800}
+          height={800}
+          loading="lazy"
+          decoding="async"
+          className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+        />
+      </div>
+      <h3 className="mt-3 font-[family-name:var(--font-display)] text-lg group-hover:text-heritage transition-colors">
+        {wall.name}
+      </h3>
+      {wall.description ? (
+        <p className="mt-1 text-sm text-ink/70 line-clamp-2">{wall.description}</p>
+      ) : null}
+      <span className="mt-2 inline-block text-sm font-medium text-heritage underline-offset-4 group-hover:underline">
+        {cta}
+        <span className="sr-only"> for the {wall.name} flower wall</span>
+      </span>
+    </>
   );
 
   return (
     <article id={wall.slug} className="group scroll-mt-24">
       {wall.hasDetailPage ? (
-        <Link href={`/flower-walls/${wall.slug}/`}>{media}</Link>
+        <Link href={href} className="block">
+          {inner}
+        </Link>
       ) : (
-        media
+        <a href={href} className="block">
+          {inner}
+        </a>
       )}
-      <div className="mt-3 flex items-baseline justify-between gap-2">
-        <h3 className="font-[family-name:var(--font-display)] text-lg">
-          {wall.hasDetailPage ? (
-            <Link href={`/flower-walls/${wall.slug}/`} className="hover:text-heritage">
-              {wall.name}
-            </Link>
-          ) : (
-            wall.name
-          )}
-        </h3>
-        {wall.price ? (
-          <span className="text-sm text-ink/70">from {wall.price}</span>
-        ) : null}
-      </div>
-      {wall.description ? (
-        <p className="mt-1 text-sm text-ink/70 line-clamp-2">{wall.description}</p>
-      ) : null}
-      <a
-        href={wall.price ? wall.bookingUrl : SITE.booking.wallEnquiry}
-        className="mt-2 inline-block text-sm font-medium text-heritage underline-offset-4 hover:underline"
-      >
-        {wall.price ? "Check availability" : "Request a quote"}
-        <span className="sr-only"> for the {wall.name} flower wall</span>
-      </a>
     </article>
   );
 }

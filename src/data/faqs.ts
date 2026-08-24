@@ -28,7 +28,7 @@ export const FAQS = [
     a: "Yes. We make neon and acrylic signage, and can set a logo into a wall for brand activations. Custom signs need about three weeks; printed graphics about two.",
   },
   {
-    q: "Why do some walls not show a price?",
-    a: "Those are quoted to your date, duration and venue rather than sold at a fixed rate. Send us the details and you will get a real number, not a range.",
+    q: "How much does a flower wall cost?",
+    a: "Every wall is quoted to your date, duration and venue rather than sold at a fixed rate, so there is no price list to work from. Send us the details and you will get a real number, not a range.",
   },
 ] as const;

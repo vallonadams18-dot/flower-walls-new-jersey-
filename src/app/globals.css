@@ -41,29 +41,65 @@ body {
   background: var(--color-gold);
 }
 
-/* Auto-sliding carousel — images slide in horizontally, hold, then the
-   next slides in, looping seamlessly (last frame is a clone of the first).
-   CSS only, like the old theme's slider without its JavaScript. Holds
-   still for users who prefer reduced motion. */
-.slideshow { overflow: hidden; }
-.slideshow-track {
+/* "Events that Bloomed" carousel. How many slides show at once lives here
+   rather than in JavaScript, so there is no resize listener and nothing that
+   can differ between the server render and the browser. Movement is a
+   transition on a transform the component sets, not a keyframe loop — a
+   keyframe loop is switched off wholesale by prefers-reduced-motion, which
+   froze the earlier version. Reduced motion drops the movement below; the
+   slides still change. */
+.events-carousel {
+  --per: 1;
+  position: relative;
+  margin-inline: auto;
+  max-width: 72rem;
+}
+@media (min-width: 640px) { .events-carousel { --per: 2; } }
+@media (min-width: 1024px) { .events-carousel { --per: 3; } }
+
+.events-viewport { overflow: hidden; }
+.events-track {
   display: flex;
-  width: 500%; /* 4 slides + clone of the first */
-  height: 100%;
-  animation: slidetrack 24s cubic-bezier(0.77, 0, 0.175, 1) infinite;
+  transform: translateX(calc(var(--i, 0) * -100% / var(--per)));
+  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
 }
-.slideshow-track > img {
-  width: 20%; height: 100%;
-  object-fit: cover;
-  flex: none;
+/* Silent re-centring on the middle copy of the reel must not animate. */
+.events-track.is-instant { transition: none; }
+
+.events-slide {
+  flex: 0 0 calc(100% / var(--per));
+  /* Padding, not gap — a gap would break the one-slide-per-step arithmetic. */
+  padding-inline: 0.5rem;
 }
-@keyframes slidetrack {
-  0%, 21%   { transform: translateX(0); }
-  25%, 46%  { transform: translateX(-20%); }
-  50%, 71%  { transform: translateX(-40%); }
-  75%, 96%  { transform: translateX(-60%); }
-  100%      { transform: translateX(-80%); } /* clone of slide 1 → seamless loop */
+.events-slide > img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 0.25rem;
+}
+
+/* Arrows sit over the outer edges, legible against any photograph. */
+.events-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 2.75rem; height: 2.75rem;
+  border-radius: 9999px;
+  color: var(--color-brand);
+  background: rgb(255 255 255 / 0.9);
+  backdrop-filter: blur(4px);
+  box-shadow: 0 1px 8px rgb(32 37 34 / 0.22);
+  transition: background-color 150ms ease;
+}
+.events-arrow:hover { background: #fff; }
+.events-arrow:focus-visible {
+  outline: 2px solid var(--color-heritage);
+  outline-offset: 2px;
 }
 @media (prefers-reduced-motion: reduce) {
-  .slideshow-track { animation: none; }
+  .events-track { transition: none; }
 }

@@ -33,8 +33,8 @@ export default function FlowerWalls() {
         </h1>
         <p className="mt-4 max-w-2xl text-lg text-ink/75">
           {all.length} walls, all available across New Jersey. Every one is
-          delivered, installed and collected by our team. Walls without a listed
-          price are quoted to your date, size and venue.
+          delivered, installed and collected by our team, and quoted to your
+          date, size and venue.
         </p>
         <a
           href={SITE.booking.contact}

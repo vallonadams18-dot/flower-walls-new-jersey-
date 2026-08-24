@@ -62,9 +62,9 @@ export function faqJsonLd(faqs: { q: string; a: string }[]): JsonLd {
 }
 
 /**
- * The full wall catalog as an ItemList. Only walls with a real advertised
- * rate carry an Offer — the catalog's $0/$100 entries are placeholders and
- * marking those up would publish prices that are not real.
+ * The full wall catalog as an ItemList. No Offer nodes: the site does not
+ * publish prices, so there is no rate to mark up, and a rich result must not
+ * state a figure the page itself does not.
  */
 export function catalogJsonLd(): JsonLd {
   return {
@@ -80,17 +80,6 @@ export function catalogJsonLd(): JsonLd {
         name: `${w.name} flower wall`,
         image: w.image,
         url: `${SITE.url}/flower-walls/#${w.slug}`,
-        ...(w.price
-          ? {
-              offers: {
-                "@type": "Offer",
-                price: w.price.replace(/[^0-9.]/g, ""),
-                priceCurrency: "USD",
-                availability: "https://schema.org/InStock",
-                url: w.bookingUrl,
-              },
-            }
-          : {}),
       },
     })),
   };

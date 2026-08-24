@@ -59,17 +59,9 @@ export default async function WallDetail({ params }: Props) {
             image: w.image,
             description: w.description,
             url: `${SITE.url}/flower-walls/${w.slug}/`,
-            ...(w.price
-              ? {
-                  offers: {
-                    "@type": "Offer",
-                    price: w.price.replace(/[^0-9.]/g, ""),
-                    priceCurrency: "USD",
-                    availability: "https://schema.org/InStock",
-                    url: w.bookingUrl,
-                  },
-                }
-              : {}),
+            // No Offer node: the site does not publish prices, so there is no
+            // rate to mark up. Rich results would otherwise show a figure the
+            // page itself does not state.
           },
         ]}
       />
@@ -98,9 +90,6 @@ export default async function WallDetail({ params }: Props) {
           <h1 className="mt-2 font-[family-name:var(--font-display)] text-4xl">
             {w.name} flower wall
           </h1>
-          {w.price ? (
-            <p className="mt-2 text-lg text-ink/70">from {w.price}</p>
-          ) : null}
           <p className="mt-5 text-ink/80 leading-relaxed">{w.description}</p>
 
           {w.eventUses?.length ? (
@@ -129,10 +118,10 @@ export default async function WallDetail({ params }: Props) {
 
           <div className="mt-8 flex flex-wrap gap-3">
             <a
-              href={w.price ? w.bookingUrl : SITE.booking.wallEnquiry}
+              href={w.bookingUrl}
               className="rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors"
             >
-              {w.price ? "Check availability" : "Request a quote"}
+              Check availability
             </a>
             <a
               href={SITE.booking.contact}

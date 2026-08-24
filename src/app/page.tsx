@@ -4,6 +4,8 @@ import { WallCard, type Wall } from "@/components/WallCard";
 import { SITE, SERVICE_AREAS } from "@/lib/site";
 import { pageMeta } from "@/lib/metadata";
 import { asset } from "@/lib/asset";
+import { Slideshow } from "@/components/Slideshow";
+import { EVENT_SLIDES } from "@/data/event-slides";
 
 export const metadata = pageMeta({
   title: "Luxury Flower Wall Rentals in New Jersey",
@@ -13,7 +15,9 @@ export const metadata = pageMeta({
 });
 
 const all = walls as Wall[];
-const featured = all.filter((w) => w.price).slice(0, 6);
+// Walls with their own page lead the homepage, so every featured card has
+// somewhere substantial to click through to.
+const featured = all.filter((w) => w.hasDetailPage).slice(0, 6);
 
 /* Homepage mirrors the old site's structure, row for row, inside the new
    design system: banner → split intro → Featured Flower Walls → Additional
@@ -183,20 +187,10 @@ export default function Home() {
           showers to activations and galas, these are the backdrops guests
           line up to photograph.
         </p>
-        <div className="slideshow mx-auto mt-8 w-full max-w-md rounded-2xl bg-sage/20 shadow-sm aspect-[4/5]">
-          <div className="slideshow-track">
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/legacy/wedding-first-dance.png")} alt="First dance in front of floral arches with cold spark fountains" width={585} height={832} />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/legacy/flower-wall-showcase.jpg")} alt="Luxury flower wall backdrop styled for an event" width={1440} height={1788} loading="lazy" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/legacy/neon-sign-activation.png")} alt="Custom neon sign on a hedge wall at a brand activation" width={585} height={832} loading="lazy" />
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/legacy/photo-booth-flower-wall.png")} alt="Photo booth paired with a flower wall backdrop" width={585} height={832} loading="lazy" />
-            {/* clone of the first slide so the loop lands seamlessly */}
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img src={asset("/legacy/wedding-first-dance.png")} alt="" aria-hidden width={585} height={832} loading="lazy" />
-          </div>
+        <div className="mt-10">
+          <Slideshow
+            slides={EVENT_SLIDES.map((s) => ({ ...s, src: asset(s.src) }))}
+          />
         </div>
         <Link
           href="/events/"

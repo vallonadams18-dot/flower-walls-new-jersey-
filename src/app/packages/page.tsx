@@ -13,7 +13,7 @@ export const metadata = pageMeta({
   path: "/packages/",
 });
 
-const featured = (walls as Wall[]).filter((w) => w.price).slice(0, 3);
+const featured = (walls as Wall[]).filter((w) => w.hasDetailPage).slice(0, 3);
 
 export default function Packages() {
   return (
