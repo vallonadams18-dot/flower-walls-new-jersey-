@@ -4,7 +4,7 @@ import { SERVICES, getService } from "@/data/services";
 import { COMBOS, getCombo } from "@/data/combos";
 import { ComboPageView } from "@/components/ComboPageView";
 import { pageMeta } from "@/lib/metadata";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
+import { JsonLd, breadcrumbJsonLd, serviceJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 
 /**
@@ -64,10 +64,18 @@ export default async function FlatPage({ params }: Props) {
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: "Home", path: "/" },
-          { name: s.nav, path: `/${s.slug}/` },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: s.nav, path: `/${s.slug}/` },
+          ]),
+          serviceJsonLd({
+            name: s.h1,
+            serviceType: s.nav,
+            description: s.meta.description,
+            url: `${SITE.url}/${s.slug}/`,
+          }),
+        ]}
       />
       <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">

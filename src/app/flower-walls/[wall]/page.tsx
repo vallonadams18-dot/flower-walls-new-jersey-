@@ -5,9 +5,10 @@ import walls from "@/data/walls.json";
 import { displayName } from "@/data/wall-renames";
 import { type Wall } from "@/components/WallCard";
 import { pageMeta } from "@/lib/metadata";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
+import { JsonLd, breadcrumbJsonLd, faqJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 import { wallImage } from "@/lib/wallImage";
+import { wallFaqs } from "@/lib/wallFaqs";
 
 const all = walls as Wall[];
 const detailed = all.filter((w) => w.hasDetailPage);
@@ -42,7 +43,17 @@ export default async function WallDetail({ params }: Props) {
   if (!w) notFound();
 
   const img = wallImage(w.slug, w.image);
-  const others = detailed.filter((o) => o.slug !== w.slug).slice(0, 4);
+  // Related walls are chosen by what they share with this one — palette first,
+  // then what they get booked for. Every page used to link the same first four
+  // walls, which is a weaker internal link graph and reads as filler.
+  const rest = detailed.filter((o) => o.slug !== w.slug);
+  const score = (o: Wall) =>
+    (o.palette ?? []).filter((c) => (w.palette ?? []).includes(c)).length * 2 +
+    (o.eventUses ?? []).filter((e) => (w.eventUses ?? []).includes(e)).length;
+  const others = [...rest]
+    .sort((a, b) => score(b) - score(a) || a.slug.localeCompare(b.slug))
+    .slice(0, 4);
+  const faqs = wallFaqs(w);
 
   return (
     <>
@@ -53,6 +64,7 @@ export default async function WallDetail({ params }: Props) {
             { name: "Flower Walls", path: "/flower-walls/" },
             { name: displayName(w.name), path: `/flower-walls/${w.slug}/` },
           ]),
+          ...(faqs.length ? [faqJsonLd(faqs)] : []),
           {
             "@context": "https://schema.org",
             "@type": "Product",
@@ -134,7 +146,25 @@ export default async function WallDetail({ params }: Props) {
         </div>
       </article>
 
-      <section className="mx-auto max-w-5xl px-4 pb-16">
+      {faqs.length ? (
+        <section className="bg-ivory border-y border-line">
+          <div className="mx-auto max-w-3xl px-4 py-12">
+            <h2 className="font-[family-name:var(--font-display)] text-2xl">
+              About the {displayName(w.name)} wall
+            </h2>
+            <dl className="mt-5 space-y-6">
+              {faqs.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-medium">{f.q}</dt>
+                  <dd className="mt-1.5 text-ink/75 leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </div>
+        </section>
+      ) : null}
+
+      <section className="mx-auto max-w-5xl px-4 py-16">
         <h2 className="font-[family-name:var(--font-display)] text-2xl">
           More walls to consider
         </h2>

@@ -108,3 +108,66 @@ export function JsonLd({ data }: { data: JsonLd | JsonLd[] }) {
     />
   );
 }
+
+/**
+ * How a delivery and install actually runs, for the location hubs.
+ *
+ * Worth knowing: Google retired HowTo rich results from search in 2023, so
+ * this earns no rich snippet today. It stays because it is accurate machine
+ * -readable description of the service and costs nothing — but it should not
+ * be counted as a ranking lever.
+ */
+export function howToJsonLd(area: string, accessNote: string): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: `How a flower wall install works in ${area}`,
+    description: `What happens between booking a flower wall or photo booth for an event in ${area} and the setup being ready for guests.`,
+    totalTime: "PT1H",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Tell us the venue and the room",
+        text: `Send the date, the venue and which room. ${accessNote}`,
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "We confirm access and paperwork",
+        text: "We agree the load-in window with the venue and issue a certificate of insurance where they require one, naming them exactly as asked.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "Delivery and install",
+        text: "The crew arrives inside the agreed window and builds the wall on a weighted free-standing frame. Nothing attaches to the venue's walls, floors or ceilings. Outdoors, the frame is ballasted and the weather called the day before.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Collection",
+        text: "We collect the same night or the following morning, whichever the venue prefers, and take our packaging with us.",
+      },
+    ],
+  };
+}
+
+/** A service offered into a named area. No Offer node — this site publishes no prices. */
+export function serviceJsonLd(opts: {
+  name: string;
+  serviceType: string;
+  description: string;
+  url: string;
+}): JsonLd {
+  return {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    name: opts.name,
+    serviceType: opts.serviceType,
+    description: opts.description,
+    url: opts.url,
+    provider: { "@id": `${SITE.url}/#business` },
+    areaServed: { "@type": "State", name: "New Jersey" },
+  };
+}

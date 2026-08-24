@@ -4,8 +4,9 @@ import { notFound } from "next/navigation";
 import { LOCATIONS, getLocation } from "@/data/locations";
 import { EVENTS } from "@/data/events";
 import { combosForLocation, COMBO_SERVICES } from "@/data/combos";
+import { LOCATION_FAQS, LOCATION_ACCESS } from "@/data/location-faqs";
 import { pageMeta } from "@/lib/metadata";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
+import { JsonLd, breadcrumbJsonLd, faqJsonLd, howToJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 
 interface Props { params: Promise<{ location: string }> }
@@ -26,14 +27,21 @@ export default async function LocationPage({ params }: Props) {
   if (!l) notFound();
   const evts = l.events.map((s) => EVENTS.find((e) => e.slug === s)).filter(Boolean);
   const combos = combosForLocation(l.slug);
+  const faqs = LOCATION_FAQS[l.slug] ?? [];
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: "Home", path: "/" },
-          { name: "Areas We Serve", path: "/locations/" },
-          { name: l.nav, path: `/locations/${l.slug}/` },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Areas We Serve", path: "/locations/" },
+            { name: l.nav, path: `/locations/${l.slug}/` },
+          ]),
+          ...(faqs.length ? [faqJsonLd(faqs)] : []),
+          ...(LOCATION_ACCESS[l.slug]
+            ? [howToJsonLd(l.nav, LOCATION_ACCESS[l.slug])]
+            : []),
+        ]}
       />
       <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
@@ -84,6 +92,21 @@ export default async function LocationPage({ params }: Props) {
             <li><Link href="/packages/" className="text-heritage hover:underline underline-offset-4">Wall + booth packages</Link></li>
           </ul>
         </section>
+        {faqs.length ? (
+          <section>
+            <h2 className="font-[family-name:var(--font-display)] text-2xl">
+              {l.nav} questions
+            </h2>
+            <dl className="mt-5 space-y-6">
+              {faqs.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-medium">{f.q}</dt>
+                  <dd className="mt-1.5 text-ink/75 leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
+          </section>
+        ) : null}
         <a href={SITE.booking.contact} className="inline-block rounded-full bg-brand px-6 py-3 text-white font-medium hover:bg-brand-dark transition-colors">
           Check your date in {l.nav}
         </a>

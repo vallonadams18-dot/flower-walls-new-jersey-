@@ -2,8 +2,9 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { BOOTHS, getBooth } from "@/data/booths";
+import { BOOTH_FAQS } from "@/data/booth-faqs";
 import { pageMeta } from "@/lib/metadata";
-import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
+import { JsonLd, breadcrumbJsonLd, faqJsonLd, serviceJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
 import { asset } from "@/lib/asset";
 
@@ -24,14 +25,24 @@ export default async function BoothPage({ params }: Props) {
   const b = getBooth(booth);
   if (!b) notFound();
   const others = BOOTHS.filter((o) => o.slug !== b.slug).slice(0, 3);
+  const faqs = BOOTH_FAQS[b.slug] ?? [];
   return (
     <>
       <JsonLd
-        data={breadcrumbJsonLd([
-          { name: "Home", path: "/" },
-          { name: "Photo Booths", path: "/photo-booths/" },
-          { name: b.name, path: `/photo-booths/${b.slug}/` },
-        ])}
+        data={[
+          breadcrumbJsonLd([
+            { name: "Home", path: "/" },
+            { name: "Photo Booths", path: "/photo-booths/" },
+            { name: b.name, path: `/photo-booths/${b.slug}/` },
+          ]),
+          ...(faqs.length ? [faqJsonLd(faqs)] : []),
+          serviceJsonLd({
+            name: `${b.name} rental`,
+            serviceType: "Photo booth rental",
+            description: b.meta.description,
+            url: `${SITE.url}/photo-booths/${b.slug}/`,
+          }),
+        ]}
       />
       <section className="bg-ivory">
         <div className="mx-auto max-w-4xl px-4 py-14">
@@ -113,6 +124,22 @@ export default async function BoothPage({ params }: Props) {
                 </div>
               ))}
             </div>
+          </section>
+        ) : null}
+
+        {faqs.length ? (
+          <section>
+            <h2 className="font-[family-name:var(--font-display)] text-2xl">
+              {b.name} questions
+            </h2>
+            <dl className="mt-5 space-y-6">
+              {faqs.map((f) => (
+                <div key={f.q}>
+                  <dt className="font-medium">{f.q}</dt>
+                  <dd className="mt-1.5 text-ink/75 leading-relaxed">{f.a}</dd>
+                </div>
+              ))}
+            </dl>
           </section>
         ) : null}
 

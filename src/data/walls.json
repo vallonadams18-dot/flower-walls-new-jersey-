@@ -127,7 +127,7 @@
       "red"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "bali",
@@ -166,7 +166,7 @@
       "hot pink"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "blue-ocean",
@@ -296,7 +296,7 @@
       "natural"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "ebony",
@@ -334,7 +334,7 @@
       "green"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "greenstreak",
@@ -354,7 +354,7 @@
       "white"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "hawaiian",
@@ -534,7 +534,7 @@
       "green"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "paradise",
@@ -652,7 +652,7 @@
       "purple"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "pink-arcadia",
@@ -748,7 +748,7 @@
       "white"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "purple-baby",
@@ -863,7 +863,7 @@
       "white"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "sunrise",
@@ -962,7 +962,7 @@
       "beige"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   },
   {
     "slug": "venessa",
@@ -998,6 +998,6 @@
       "blush"
     ],
     "needsReview": false,
-    "hasDetailPage": false
+    "hasDetailPage": true
   }
 ]
