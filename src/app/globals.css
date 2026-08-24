@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+@theme {
+  --color-bloom-50: #fdf5f7;
+  --color-bloom-100: #fae8ee;
+  --color-bloom-300: #eeb0c4;
+  --color-bloom-600: #b4527a;
+  --color-bloom-700: #8f3f60;
+  --color-leaf-700: #2f5d3f;
+  --color-ink: #1c1618;
+  --font-display: Georgia, "Times New Roman", serif;
+}
+
+html { scroll-behavior: smooth; }
+body { color: var(--color-ink); background: #fff; }

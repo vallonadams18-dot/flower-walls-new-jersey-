@@ -1,0 +1,996 @@
+[
+ {
+  "slug": "abigail",
+  "name": "Abigail",
+  "packageId": 61435,
+  "image": "https://img.checkcherry.com/RgWgyVSJJK55gYZ7MdY_l2er55KagtMcnVDWOmTrank/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9oZWU4OGti/NGF5NGFoeTkybTR1/aTJuN2duNXc0",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61435",
+  "price": null,
+  "description": "A soft, romantic arrangement from our classic collection. Ask us for current photographs and colour details.",
+  "eventUses": [
+   "weddings",
+   "showers"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "adonis-blue",
+  "name": "Adonis Blue",
+  "packageId": 61436,
+  "image": "https://img.checkcherry.com/vYTwUx41KxxG6HJEH7WeCHbo3SLwcPQX3UQbTJ0b-og/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9tMDN6cXpn/eGYxY3ljaDdxOWMy/MGw3cTNkbWxu",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61436",
+  "price": null,
+  "description": "Blue-toned styling named for the butterfly. One of the cooler palettes in the collection.",
+  "eventUses": [
+   "showers",
+   "christenings",
+   "evening events"
+  ],
+  "palette": [
+   "blue"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "amazon",
+  "name": "Amazon",
+  "packageId": 61462,
+  "image": "https://img.checkcherry.com/TsX6pPPgzDXLF6k7ApgI9xSov2QXeYwwb3S5LybWpy4/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi90NHdncTNs/MDc5YnVnemQ3ZnZp/ZTl1ZHNjNThw",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61462",
+  "price": null,
+  "description": "Dense, jungle-depth greenery with real texture. The wilder cousin of our hedge walls.",
+  "eventUses": [
+   "corporate events",
+   "tropical themes",
+   "launches"
+  ],
+  "palette": [
+   "green"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "amazon-hawaiian-activation",
+  "name": "Amazon Hawaiian activation",
+  "packageId": 138588,
+  "image": "https://img.checkcherry.com/Q3x0OwzQ4IGnng3M5d3wyX0Cb30Xl0Svi4iqUk92_qo/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi91YnM5M3Az/aW96Yzg4YWU2ZmJk/eGtudHdwNnVy",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=138588",
+  "price": null,
+  "description": "Our large-format tropical activation build \u2014 Amazon's greenery depth combined with Hawaiian colour, sized for brand events. Quoted to the space.",
+  "eventUses": [
+   "brand activations",
+   "trade shows",
+   "large events"
+  ],
+  "palette": [
+   "green",
+   "coral"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "american-lady",
+  "name": "American Lady",
+  "packageId": 61465,
+  "image": "https://img.checkcherry.com/x-wbqGVxi-V5HODJTGsXzLJAfAqk1QtynM3PS013fWg/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi84czhybDFr/emo1cTdvMGhuM2Vq/N3Z6OGpxd3Zl",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61465",
+  "price": null,
+  "description": "Butterfly-series styling in warm tones. Ask us for current photographs.",
+  "eventUses": [
+   "birthdays",
+   "garden parties"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "arctic-admiral",
+  "name": "Arctic Admiral",
+  "packageId": 61463,
+  "image": "https://img.checkcherry.com/kphRqNSmKT5L99zydWo_fE332pB-PvzgGADRqo17gj0/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi95dmlzcGU4/enNpbHpyaWhnZmVn/b20ydWpza2Rn",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61463",
+  "price": null,
+  "description": "Cool whites and icy tones from the butterfly series. A natural winter-event wall.",
+  "eventUses": [
+   "winter weddings",
+   "holiday parties"
+  ],
+  "palette": [
+   "white",
+   "ice blue"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "crimson-rose",
+  "name": "Crimson Rose",
+  "packageId": 61452,
+  "image": "https://img.checkcherry.com/7qrFoxchgSC4mK8Bj4wh1SIpFPM0FMOg6aI0LVo3fI8/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi84YzkzdDVt/a3pxZDlpYmxmczVr/MTNreHVwenJ1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61452",
+  "price": null,
+  "originalName": "Atlanta",
+  "description": "Deep crimson roses in a dense, formal arrangement. Rich enough for black-tie, warm enough for a wedding \u2014 and a natural stage for gold or white signage.",
+  "eventUses": [
+   "galas",
+   "weddings",
+   "anniversaries"
+  ],
+  "palette": [
+   "crimson",
+   "red"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "bali",
+  "name": "Bali",
+  "packageId": 117511,
+  "image": "https://img.checkcherry.com/j-_LJdMCmtNaLOYqCFNRwBztFIMa-kLFt6CFGy-myrg/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8wMWRzOHpy/YW0yMDJzM2EzNDlr/NWdhcDgxYjVq",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117511",
+  "price": null,
+  "description": "Tropical styling with a softer, more romantic hand than our louder island walls. Destination-wedding energy without the flights.",
+  "eventUses": [
+   "weddings",
+   "showers",
+   "summer events"
+  ],
+  "palette": [
+   "green",
+   "white"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "barbie-wall",
+  "name": "Barbie Wall",
+  "packageId": 89128,
+  "image": "https://img.checkcherry.com/66xWp9LIJQ0uZbKmc4wG96jIGUCUDzQ934Rt4mb8RVU/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi93MHFhMzIw/ZnVuaHA2NHMwNDMx/bnA3a2tzeG91",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89128",
+  "price": null,
+  "description": "Saturated doll-pink from edge to edge. It has one job \u2014 total pink commitment \u2014 and every themed party photograph proves it does that job.",
+  "eventUses": [
+   "themed parties",
+   "birthdays",
+   "bachelorettes"
+  ],
+  "palette": [
+   "hot pink"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "blue-ocean",
+  "name": "BLUE OCEAN",
+  "packageId": 173193,
+  "image": "https://img.checkcherry.com/s7tUV5l2pyWH8Wq9vKHmA-ZiLkjQkOo2qtL6e0dQzzg/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9uZjRpaTA3/NmpyZTU3YTI0aWQ4/cDk0Z3o5N2lu",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=173193",
+  "price": "$700.00",
+  "description": "Ocean blues in a graded, wave-like arrangement. Bold, cool and modern.",
+  "eventUses": [
+   "nautical themes",
+   "corporate events",
+   "summer parties"
+  ],
+  "palette": [
+   "blue"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "cee-indigo",
+  "name": "Cee Indigo",
+  "packageId": 117513,
+  "image": "https://img.checkcherry.com/SRSFwTuW-0jM6XonJVgGEUcbK_oEK8xjyfcRspC7TsY/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi84am84NzNq/YzE3c3Via3Q1aXRr/NjYyZXFweHll",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117513",
+  "price": "$600.00",
+  "description": "Deep indigo blues with violet undertones \u2014 a cool, modern wall that suits evening events and photographs superbly under white uplighting.",
+  "eventUses": [
+   "corporate evenings",
+   "milestone birthdays",
+   "product launches"
+  ],
+  "palette": [
+   "indigo",
+   "blue",
+   "violet"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "chloe",
+  "name": "Chloe",
+  "packageId": 61466,
+  "image": "https://img.checkcherry.com/PzFwtPYWgvctuQ8DBWpfSyq-Yohdm4Hucxx0nudSbjs/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8zejVsbnEz/NXByazZscWNzYzQw/b3MxcDZyNjJo",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61466",
+  "price": null,
+  "description": "A soft classic from our original collection. Ask us for current photographs and palette.",
+  "eventUses": [
+   "weddings",
+   "showers"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "creamsicle",
+  "name": "Creamsicle",
+  "packageId": 117448,
+  "image": "https://img.checkcherry.com/sbz6HvxKYqM-neDwgIhw0TD_M9KjbAJnlX5eAc_pSqk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi90OHJhaWt4/Ymc1ejc5djlxZnZv/dmJqNG54OHo3",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117448",
+  "price": "$600.00",
+  "description": "Orange and cream swirled together like the ice pop it is named for. Playful without being childish, and one of the few walls that works equally well at a first birthday and a brand launch.",
+  "eventUses": [
+   "birthday parties",
+   "brand activations",
+   "baby showers"
+  ],
+  "palette": [
+   "orange",
+   "cream"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "custom",
+  "name": "Custom",
+  "packageId": 164748,
+  "image": "https://img.checkcherry.com/5wvEZzqPkBLLBvsqnICptuXf48LgndH7t7nLyAtVTEM/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9mbmNyazJj/OXdhc3dnYzMwNGFq/ZzE5ZGJybDBv",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=164748",
+  "price": null,
+  "description": "Built to your brief \u2014 palette, density, signage cut-outs and sizing to suit the event. Lead time and pricing quoted to the design.",
+  "eventUses": [
+   "brand activations",
+   "weddings",
+   "anything"
+  ],
+  "palette": [],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "custom-champagne-and-flower-walls",
+  "name": "Custom Champagne and flower walls",
+  "packageId": 98241,
+  "image": "https://img.checkcherry.com/OJ7ICQOuk0J4mxOvJ-WzbaPWLg44nosdzSwHOGUqYwo/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9hcXRkMm1p/amp3NGR3empwc3lm/eWY1OGRjbzJi",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=98241",
+  "price": null,
+  "description": "A flower wall integrated with a champagne display \u2014 florals above, service below. The cocktail-hour centrepiece that also pours.",
+  "eventUses": [
+   "galas",
+   "launch parties",
+   "weddings"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "earthy",
+  "name": "Earthy",
+  "packageId": 73769,
+  "image": "https://img.checkcherry.com/qurxrJu8Gt3u5ZLLCaCeVZM2JM4sJ62HFod7jjpRtbk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9wbHIybmhl/ZmRtNDB4eWp3N3A0/NGV2eXZjaGU0",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=73769",
+  "price": null,
+  "description": "Muted naturals \u2014 creams, tans and dried-floral tones. On-trend for boho weddings and any event styled around linen, rattan and pampas.",
+  "eventUses": [
+   "boho weddings",
+   "showers",
+   "styled shoots"
+  ],
+  "palette": [
+   "cream",
+   "tan",
+   "natural"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "ebony",
+  "name": "Ebony",
+  "packageId": 61434,
+  "image": "https://img.checkcherry.com/BeJ8Qw8ISvKTcYPrRazs9PqwPsgL6VHIx3nXS1e3EkA/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8xenUxdmVr/N2p2ODRxZ250dnV4/Z3czN2Mwbmc2",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61434",
+  "price": null,
+  "description": "An all-black floral wall \u2014 rare, striking and instantly elegant. It makes gold signage and pale outfits leap out of every photograph, and it is our first recommendation for black-tie events.",
+  "eventUses": [
+   "black-tie galas",
+   "fashion events",
+   "milestone birthdays"
+  ],
+  "palette": [
+   "black"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "green-machine",
+  "name": "Green Machine",
+  "packageId": 68323,
+  "image": "https://img.checkcherry.com/hYfP1Va3JU_1i0pwX0HDYTt1OApePx1NTX9AkLVk_AU/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9nd21tOWh2/djZpMXY0aTBzZXFq/YWp2enY4c2hh",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=68323",
+  "price": null,
+  "description": "A full greenery wall \u2014 boxwood-style foliage without blooms. The corporate favourite: it photographs crisply behind logos and neon signs and never argues with a brand palette.",
+  "eventUses": [
+   "corporate events",
+   "brand activations",
+   "step-and-repeats"
+  ],
+  "palette": [
+   "green"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "greenstreak",
+  "name": "Greenstreak",
+  "packageId": 61469,
+  "image": "https://img.checkcherry.com/z0RNq_goyPL_MG04HjuFFU8PljeyH-Wa3uLGHDbMmjI/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9nMjB1OTI2/ZDN2eG81d3JiYWN2/dWR4b3EzYzA1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61469",
+  "price": null,
+  "description": "Greenery streaked through with white florals \u2014 softer than a plain hedge wall, more restrained than a full floral. A strong choice when the event styling is 'garden'.",
+  "eventUses": [
+   "garden parties",
+   "weddings",
+   "showers"
+  ],
+  "palette": [
+   "green",
+   "white"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "hawaiian",
+  "name": "Hawaiian",
+  "packageId": 61459,
+  "image": "https://img.checkcherry.com/2SHMkAjEyfCg-oCPGgHK-GPqfp2kWMbafQOavACqF8A/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9uanRmaHly/OThhZmx6dGV5aHQ2/NmVkeWY2ZGlq",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61459",
+  "price": null,
+  "description": "Lush tropical florals and greenery with hits of hibiscus colour. It turns an indoor venue into somewhere considerably warmer, and pairs naturally with a summer cocktail hour.",
+  "eventUses": [
+   "luaus",
+   "summer parties",
+   "corporate socials"
+  ],
+  "palette": [
+   "green",
+   "coral",
+   "yellow"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "indigo-duskywing",
+  "name": "Indigo Duskywing",
+  "packageId": 61456,
+  "image": "https://img.checkcherry.com/rSo9iohP2LF8zrsV7jE0J1Cq2DsdEUbamAPtYYHnifI/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9rdXZiZWY5/dTF3Y2p0d2NqNDk2/aThhanhxOHpz",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61456",
+  "price": null,
+  "description": "Deep indigo styling from the butterfly series \u2014 moody, cool and distinctive in evening light.",
+  "eventUses": [
+   "evening events",
+   "corporate dinners"
+  ],
+  "palette": [
+   "indigo"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "jasmin",
+  "name": "Jasmin",
+  "packageId": 89122,
+  "image": "https://img.checkcherry.com/Gd_fmFb3iM1j5PXPwFFkTKFjOUVx-lzvIOu0umb5x-g/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi85d2U0ZzVr/NzV0ampob2Mwenht/eTVxa2FzaXFv",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89122",
+  "price": null,
+  "description": "Delicate white-and-green styling inspired by its namesake flower. Understated, fragrant-looking and photograph-friendly.",
+  "eventUses": [
+   "weddings",
+   "showers",
+   "garden events"
+  ],
+  "palette": [
+   "white",
+   "green"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "joy",
+  "name": "Joy",
+  "packageId": 73789,
+  "image": "https://img.checkcherry.com/EsJ90JfbHyamjqWY4bj7W35cTDIa0EmBIQNaQUcucH0/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8yand0eTI1/djB2aWJvNXJkb2M4/Y255NHl0YWs2",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=73789",
+  "price": null,
+  "description": "Bright, happy florals arranged to live up to the name. A crowd-pleaser for celebrations of every kind.",
+  "eventUses": [
+   "birthdays",
+   "showers",
+   "graduations"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "majestic",
+  "name": "Majestic",
+  "packageId": 89125,
+  "image": "https://img.checkcherry.com/Nwnc5e54ICDWmc4mkr2L4QDroIzHnhbT0CVjqNLpwxY/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9rMzNxaTB4/MzZnbTVvZmtuOGo0/NXN6N2gyeHNm",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89125",
+  "price": null,
+  "description": "One of our signature statement walls \u2014 a rich, layered arrangement built to anchor a ballroom. Ask us for current photographs; it books most weekends.",
+  "eventUses": [
+   "weddings",
+   "galas",
+   "large receptions"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "monarch",
+  "name": "Monarch",
+  "packageId": 61461,
+  "image": "https://img.checkcherry.com/Aq_nsR7dBTSZH-2RJt7EOjip-bJc8yTlQ4G7vsQERrM/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9hZnZzcmI4/czVid21hY2pienIy/NWMwbnV4M2Fw",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61461",
+  "price": null,
+  "description": "Named for the butterfly, styled to match \u2014 warm oranges grounded in black accents. Distinctive without being loud.",
+  "eventUses": [
+   "autumn events",
+   "birthdays",
+   "garden parties"
+  ],
+  "palette": [
+   "orange",
+   "black"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "mourning-cloak",
+  "name": "Mourning cloak",
+  "packageId": 61441,
+  "image": "https://img.checkcherry.com/fz-6-uc75fP3R6b9fIKsAgncht4kyBHUsiSbBKnH59M/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi91cm0wc2Jn/bmdud21jc3FxYm90/ZTd0OGxmazRn",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61441",
+  "price": null,
+  "description": "Dark, dramatic styling named for the butterfly \u2014 one of the boldest walls in the collection.",
+  "eventUses": [
+   "black-tie events",
+   "Halloween events",
+   "fashion"
+  ],
+  "palette": [
+   "dark"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "ombre",
+  "name": "Ombre",
+  "packageId": 89121,
+  "image": "https://img.checkcherry.com/eB7Sp1EtiBlHjFG59P7EtNJBIK16itK-vdQyeVYUljE/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi96emwwcnQ0/eHhwYWt1am92d2Ny/MW92dWZ2OGlk",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89121",
+  "price": "$750.00",
+  "description": "A graded wash of colour that deepens from soft blush at the top to rich rose at the base. The gradient gives photographs depth that a single-colour wall cannot, and it flatters every skin tone under warm venue lighting.",
+  "eventUses": [
+   "weddings",
+   "bridal showers",
+   "engagement parties"
+  ],
+  "palette": [
+   "blush",
+   "rose",
+   "pink"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "palm",
+  "name": "Palm",
+  "packageId": 117491,
+  "image": "https://img.checkcherry.com/AFNZM_61DhvolSKuXVi6f_rIgEL67e0I9U4w1x6ynxI/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9kODFqY3Rv/cjhlczExdWFhOWww/bGlkNGk0Ynp5",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117491",
+  "price": "$600.00",
+  "description": "Tropical palm foliage with structural, oversized leaves. More architectural than the floral walls \u2014 it suits modern venues and menswear-heavy events unusually well.",
+  "eventUses": [
+   "launch parties",
+   "cocktail events",
+   "summer socials"
+  ],
+  "palette": [
+   "green"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "paradise",
+  "name": "Paradise",
+  "packageId": 68324,
+  "image": "https://img.checkcherry.com/g9IX_aevp57DaH-P9JLeMEP40kMBclpwOO9i92JBvhk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9vMnE3MDkz/cWVqdmg3ajU3b3Iw/emowYXhmZmZh",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=68324",
+  "price": null,
+  "description": "A tropical arrangement of greens and brights with real depth to the foliage. Sits somewhere between Hawaiian and a classic greenery wall \u2014 lush first, colourful second.",
+  "eventUses": [
+   "corporate events",
+   "summer weddings",
+   "launch parties"
+  ],
+  "palette": [
+   "green",
+   "multicolour"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "paris",
+  "name": "Paris",
+  "packageId": 117512,
+  "image": "https://img.checkcherry.com/E93O-W9If0_gRJIwgMIin25R5tfbuKyGKphtU2kI-Ys/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi91OW0xYXYw/czFzdWFybGtwdTF6/MnpkdWYzbjU2",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117512",
+  "price": "$600.00",
+  "description": "Romantic, formal styling with a nod to the city it is named for. A favourite backdrop for proposals and intimate receptions.",
+  "eventUses": [
+   "proposals",
+   "anniversaries",
+   "intimate weddings"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pavon",
+  "name": "Pavon",
+  "packageId": 64178,
+  "image": "https://img.checkcherry.com/iumaKKAuDqAdn1ET0-ERrABxcJHnsPmxNjR67GcYBaU/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8zZWNiMjVp/bGNsZGJ5Z2pibWRk/N2tmaG9ham83",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=64178",
+  "price": null,
+  "description": "Peacock-inspired styling \u2014 teals and greens with iridescent depth, named for the Spanish word for the bird.",
+  "eventUses": [
+   "evening events",
+   "corporate dinners",
+   "birthdays"
+  ],
+  "palette": [
+   "teal",
+   "green"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "peacock-butterfly",
+  "name": "Peacock Butterfly",
+  "packageId": 117497,
+  "image": "https://img.checkcherry.com/mKQ9A4QKbxExG2BcWSwzkO2yG7fo19eheYQZ60UU8h8/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9qcXoybDIz/ZTh3Z3g2aG8wb3Zt/cDV6cGdqMzN0",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117497",
+  "price": null,
+  "description": "Butterfly-series styling in peacock tones \u2014 teal, violet and green together. One of the most photographed palettes in the series.",
+  "eventUses": [
+   "birthdays",
+   "evening receptions",
+   "showers"
+  ],
+  "palette": [
+   "teal",
+   "violet",
+   "green"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pink-blue",
+  "name": "Pink & blue",
+  "packageId": 117496,
+  "image": "https://img.checkcherry.com/gbexSX3zhJ9MyJTBkYbKp5NLoW0LBwPPQxpYzR7ll5s/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8ybDR2NnNs/eHd0cThucHU0b2Jt/ZDlwY3ViYmlx",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117496",
+  "price": "$600.00",
+  "description": "Pink and blue together \u2014 the gender-reveal classic, and a cheerful two-tone for any celebration.",
+  "eventUses": [
+   "gender reveals",
+   "baby showers",
+   "birthdays"
+  ],
+  "palette": [
+   "pink",
+   "blue"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pink-purple-ombre",
+  "name": "Pink & Purple Ombre",
+  "packageId": 117543,
+  "image": "https://img.checkcherry.com/Zg_RmXcpvnEQwHcXI5_1UCVtlI2b1qLqUpy_6Ll-7RU/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9hN211Zm5o/ZXZ0MWQ3Mzg3Nmo0/eW5jajN4bGdj",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117543",
+  "price": "$600.00",
+  "description": "Pink melting into violet across the full height of the wall. Bolder than a blush ombre, it holds its own in large ballrooms where a pastel wall would wash out.",
+  "eventUses": [
+   "quincea\u00f1eras",
+   "sweet sixteens",
+   "birthday parties"
+  ],
+  "palette": [
+   "pink",
+   "purple"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pink-arcadia",
+  "name": "Pink Arcadia",
+  "packageId": 89174,
+  "image": "https://img.checkcherry.com/l9Va-mtGLFcFC4Ni46eNMwr2VQa3R7kWjSTej2jGXOk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi83MGxvazI1/MGMyMGQxZ2NncnJ0/dW1jejcyNWZm",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89174",
+  "price": null,
+  "description": "Pink-forward styling with garden depth. Sits between our blush walls and the full Barbie pink.",
+  "eventUses": [
+   "showers",
+   "birthdays",
+   "bachelorettes"
+  ],
+  "palette": [
+   "pink"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pink-blush",
+  "name": "Pink Blush",
+  "packageId": 61453,
+  "image": "https://img.checkcherry.com/jckF0GuDkqkJbx-grkBLQa9wxz1CxVtQ5SojAdR3chE/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9xM280Nm5x/eGdkM3BobzUyd3l6/MGlvcXRnZWJ1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61453",
+  "price": "$600.00",
+  "description": "Tone-on-tone pinks from pale blush to rose, densely packed for a soft, romantic backdrop. The most-requested style for weddings and showers, and it is easy to see why in the photographs.",
+  "eventUses": [
+   "weddings",
+   "bridal showers",
+   "baby showers"
+  ],
+  "palette": [
+   "blush",
+   "pink"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "pink-butterfly",
+  "name": "Pink Butterfly",
+  "packageId": 117498,
+  "image": "https://img.checkcherry.com/LQcLiPE-x5bpiUKm81-GUCyAhKwy4FjNxYUorxqod28/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi8yMGRnMWRj/cDUybHFuenQ3N3Bn/Y2xmcW05MDRu",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117498",
+  "price": "$600.00",
+  "description": "Pink florals with butterfly accents throughout. A favourite for showers and girls' birthdays.",
+  "eventUses": [
+   "baby showers",
+   "birthdays",
+   "christenings"
+  ],
+  "palette": [
+   "pink"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "pink-butterfly-arch",
+  "name": "Pink Butterfly Arch",
+  "packageId": 117515,
+  "image": "https://img.checkcherry.com/oS38KBETOqVDCsTcW19tgCCqUxZ_Zj678kr1bA3J9e0/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9zb2l6ZjBw/NDBsa292YjNkejZq/Mmdua3N5NzF5",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117515",
+  "price": "$600.00",
+  "description": "The Pink Butterfly styling shaped as a walk-through arch rather than a flat wall. Entrances, ceremonies and cake backdrops.",
+  "eventUses": [
+   "ceremonies",
+   "entrances",
+   "cake tables"
+  ],
+  "palette": [
+   "pink"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "purity",
+  "name": "Purity",
+  "packageId": 89123,
+  "image": "https://img.checkcherry.com/0WXwDcXq6HMBy9Nm80g8Iu3Sn5xZaEFvDrfCCGMkbY4/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi85eTA0amFr/YTZ6ZWNqM295bTV5/YnJrc2QyYnhv",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89123",
+  "price": "$500.00",
+  "description": "An all-white wall, dense and seamless. The classic wedding backdrop, and the most versatile wall in the collection \u2014 it takes on whatever colour your lighting gives it.",
+  "eventUses": [
+   "weddings",
+   "religious ceremonies",
+   "minimalist events"
+  ],
+  "palette": [
+   "white"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "purple-baby",
+  "name": "Purple Baby",
+  "packageId": 117481,
+  "image": "https://img.checkcherry.com/9g-WbriA9aTPSGnfeeOrV7sLF-c0PfCiXlV2MvrnUHc/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi81YzhyejAy/bnZtc3N3dzhqbXJj/YmM1djB5dTky",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117481",
+  "price": "$600.00",
+  "description": "Soft lilac and lavender tones \u2014 gentle, sweet and a natural shower wall.",
+  "eventUses": [
+   "baby showers",
+   "first birthdays",
+   "christenings"
+  ],
+  "palette": [
+   "lilac",
+   "lavender"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "rainbow-wall",
+  "name": "Rainbow wall",
+  "packageId": 117501,
+  "image": "https://img.checkcherry.com/cq1cMyYKICXSnuDzWQ2RFX7R-X4i3NujkYVsa9atf3s/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9nOXB2cHk1/aWlla243YTVieTh3/b3ByaXl2ZTNj",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117501",
+  "price": "$600.00",
+  "description": "Every colour, in order, edge to edge. Pride events, kids' parties and any brand that owns a colourful identity \u2014 nothing else in the collection photographs louder.",
+  "eventUses": [
+   "Pride events",
+   "children's parties",
+   "brand activations"
+  ],
+  "palette": [
+   "rainbow"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "red-admiral",
+  "name": "Red Admiral",
+  "packageId": 61464,
+  "image": "https://img.checkcherry.com/2R8Wvw9bI5xhg-eKscc6DW1fIP6aRp3V2_eqhcorUBI/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9icnI0bXk4/cGw3a3cxZ3Rqb3U3/cWkxcTlyeW81",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61464",
+  "price": null,
+  "description": "Red-accented styling from the butterfly series, warmer and less formal than our full rose walls.",
+  "eventUses": [
+   "birthdays",
+   "celebrations"
+  ],
+  "palette": [
+   "red"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "rio",
+  "name": "Rio",
+  "packageId": 117446,
+  "image": "https://img.checkcherry.com/zYAHvgI-Bt4TPQpPpcPCPEZrad7qL_5YzaS3AkM-R4s/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi84Y3ZuZGw1/NnkxcGl2eHBweHZ4/MXNwMHQzNHht",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117446",
+  "price": "$650.00",
+  "description": "Carnival colour at full volume \u2014 a dense, saturated mix that refuses to sit in the background. For events that want energy in every photograph.",
+  "eventUses": [
+   "festivals",
+   "birthday parties",
+   "brand activations"
+  ],
+  "palette": [
+   "multicolour"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "ruby-s-red",
+  "name": "Ruby's Red",
+  "packageId": 89120,
+  "image": "https://img.checkcherry.com/v3iEY-y6NEsqAgRHZnzRhZ0W6A5cehpGMg1_Ijkt4Lc/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9jMDI1Zjhv/OGNraWlsemdweDF4/MzFsZTQ1bjZl",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89120",
+  "price": null,
+  "description": "Deep red roses edge to edge. Dramatic, formal and unapologetically romantic \u2014 the wall for anniversaries, galas and every event built around a red palette.",
+  "eventUses": [
+   "anniversaries",
+   "galas",
+   "Valentine's events"
+  ],
+  "palette": [
+   "red"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "sky-blue",
+  "name": "Sky Blue",
+  "packageId": 73792,
+  "image": "https://img.checkcherry.com/TaauqMV7AhqLvfNEt65qvtLAZTL5cv_FA8votPPqwZo/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi83aXBuanM1/cnA2NXE3dHp5Zmph/aGt3MjZscWZr",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=73792",
+  "price": null,
+  "description": "Soft sky blues with white accents, light and airy. A favourite for baby showers and christenings, and a quiet backdrop that lets the guests be the colour.",
+  "eventUses": [
+   "baby showers",
+   "christenings",
+   "gender reveals"
+  ],
+  "palette": [
+   "blue",
+   "white"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "sunrise",
+  "name": "Sunrise",
+  "packageId": 89316,
+  "image": "https://img.checkcherry.com/1jJsHS77yhKcNnUM3eq6Noj5g4owyH9OUVnLVhZvBF0/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9qbmd6ZjNw/dzZtam5yenljb2wz/NWxpdDBkYjI1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89316",
+  "price": null,
+  "description": "The brighter sibling of Sunset \u2014 yellows and soft pinks that read fresh rather than moody. A natural fit for daytime events and brunch receptions.",
+  "eventUses": [
+   "baby showers",
+   "brunch events",
+   "daytime weddings"
+  ],
+  "palette": [
+   "yellow",
+   "pink"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "sunset",
+  "name": "Sunset",
+  "packageId": 117450,
+  "image": "https://img.checkcherry.com/mhlhdDkAfTJhpnM38oBbIzHOdu2oDkfBPnJPc5sM7Rk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi81eGJzeDhv/cWFzbHpqamFnb3Aw/OGJ4cjUwMnYy",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117450",
+  "price": "$600.00",
+  "description": "Warm oranges, corals and golds arranged like the last hour of daylight. It photographs beautifully against evening receptions and gives summer events a glow that survives the flash.",
+  "eventUses": [
+   "weddings",
+   "summer parties",
+   "engagement shoots"
+  ],
+  "palette": [
+   "orange",
+   "coral",
+   "gold"
+  ],
+  "needsReview": false,
+  "hasDetailPage": true
+ },
+ {
+  "slug": "tailed-jay",
+  "name": "Tailed Jay",
+  "packageId": 61457,
+  "image": "https://img.checkcherry.com/E_3m_xlMK3awTuEdYxX0aXhRWZTOmXBZWtrYG1Owpls/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9zaXdycnE5/MHphMGltMW9kMWRx/OTdtanR1ZXg1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61457",
+  "price": null,
+  "description": "Green-and-white butterfly-series styling with a fresh, botanical feel.",
+  "eventUses": [
+   "garden events",
+   "showers"
+  ],
+  "palette": [
+   "green",
+   "white"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "tailed-jay-2-0",
+  "name": "Tailed Jay 2.0",
+  "packageId": 73770,
+  "image": "https://img.checkcherry.com/1y3iO4SexxYALvtn1Woq2JAzfcwoFma0AHVgGKl5pNE/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi81dzk5aWFp/aHpxa2Fqd3pmN2Fl/MDZ2cjIzY3Jj",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=73770",
+  "price": null,
+  "description": "The updated build of Tailed Jay \u2014 same palette, denser florals and a cleaner frame.",
+  "eventUses": [
+   "garden events",
+   "showers"
+  ],
+  "palette": [
+   "green",
+   "white"
+  ],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "tan",
+  "name": "Tan",
+  "packageId": 64168,
+  "image": "https://img.checkcherry.com/2wp2hr1o46smpSJ4tKDoDwu_VyOJXI-0wKZaPIoCoQE/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi80cWRjeHY2/bnVrNzBvZWdodXlj/c2JwZzNqNHJt",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=64168",
+  "price": null,
+  "description": "Warm neutral tones in a single wash. A deliberate understatement that flatters every outfit and lets signage carry the message.",
+  "eventUses": [
+   "corporate events",
+   "neutral-themed weddings",
+   "photo studios"
+  ],
+  "palette": [
+   "tan",
+   "beige"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "venessa",
+  "name": "Venessa",
+  "packageId": 61467,
+  "image": "https://img.checkcherry.com/JnbSyL55gvvOArz3Ln6hmL2sOsNOTS9VBlI0GKWsR3o/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9udXloeDNn/aXR6b2hsMGNuMzI5/aXBwbnVqcjg1",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=61467",
+  "price": null,
+  "description": "A classic-collection wall with soft styling. Ask us for current photographs and palette.",
+  "eventUses": [
+   "weddings",
+   "showers"
+  ],
+  "palette": [],
+  "needsReview": true,
+  "hasDetailPage": false
+ },
+ {
+  "slug": "white-pink-blush",
+  "name": "White Pink Blush",
+  "packageId": 73768,
+  "image": "https://img.checkcherry.com/QRe5PRgIrufZJC9f2Rowv4lSh9OLVu8pWWLex6mZQ0M/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9hcDZwMjJj/b3lrcjE5d2p2aGU1/MDU5bTY5OHN4",
+  "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=73768",
+  "price": null,
+  "description": "White florals lifted with the faintest blush \u2014 bridal by instinct. It reads almost monochrome in photographs until the pink catches the light.",
+  "eventUses": [
+   "weddings",
+   "bridal showers",
+   "engagements"
+  ],
+  "palette": [
+   "white",
+   "blush"
+  ],
+  "needsReview": false,
+  "hasDetailPage": false
+ }
+]
