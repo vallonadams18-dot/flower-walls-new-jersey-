@@ -1,9 +1,14 @@
-/** Location cluster. One page per area the business states it serves in
+/** Location cluster — the area HUBS. One page per area the business states it serves in
  *  `SITE.SERVICE_AREAS`, reached from the two real delivery hubs (Newark and
  *  Barnegat, 50-mile radius each). Barnegat itself has no page — it is a hub,
  *  not a market, and the Jersey Shore page already explains it.
  *  Every page must say things true only of its place — no doorway pages where
- *  only the city changes. */
+ *  only the city changes.
+ *
+ *  These are hubs, not service pages: they cover everything we do in an area
+ *  and link down to the service-specific grid in `combos.ts`. Titles and H1s
+ *  are deliberately broader than the grid's so the two do not compete for the
+ *  same query. */
 export interface LocationPage {
   slug: string;
   nav: string;
@@ -18,9 +23,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "jersey-city",
     nav: "Jersey City",
-    h1: "Flower wall rental in Jersey City",
+    h1: "Flower walls and photo booths in Jersey City",
     meta: {
-      title: "Flower Wall Rental Jersey City",
+      title: "Flower Walls & Photo Booths Jersey City NJ",
       description:
         "Flower wall and photo booth rentals in Jersey City — waterfront venues, lofts and rooftops, delivered from our Newark hub minutes away.",
     },
@@ -45,9 +50,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "newark",
     nav: "Newark",
-    h1: "Flower wall rental in Newark",
+    h1: "Flower walls and photo booths in Newark",
     meta: {
-      title: "Flower Wall Rental Newark NJ",
+      title: "Flower Walls & Photo Booths Newark NJ",
       description:
         "Flower wall and photo booth rentals in Newark, NJ — our home base. Halls, hotels and the Ironbound's event spaces, with no travel fee.",
     },
@@ -72,9 +77,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "hoboken",
     nav: "Hoboken",
-    h1: "Flower wall rental in Hoboken",
+    h1: "Flower walls and photo booths in Hoboken",
     meta: {
-      title: "Flower Wall Rental Hoboken",
+      title: "Flower Walls & Photo Booths Hoboken NJ",
       description:
         "Flower wall and photo booth rentals in Hoboken — waterfront weddings, brownstone parties and rooftop events, with parking handled in the quote.",
     },
@@ -99,9 +104,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "montclair",
     nav: "Montclair",
-    h1: "Flower wall rental in Montclair",
+    h1: "Flower walls and photo booths in Montclair",
     meta: {
-      title: "Flower Wall Rental Montclair",
+      title: "Flower Walls & Photo Booths Montclair NJ",
       description:
         "Flower wall and photo booth rentals in Montclair, NJ — restaurant private rooms, art-space events, backyard showers and Essex County weddings.",
     },
@@ -126,9 +131,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "jersey-shore",
     nav: "Jersey Shore",
-    h1: "Flower wall rental at the Jersey Shore",
+    h1: "Flower walls and photo booths at the Jersey Shore",
     meta: {
-      title: "Flower Wall Rental Jersey Shore",
+      title: "Flower Walls & Photo Booths Jersey Shore NJ",
       description:
         "Flower wall and photo booth rentals at the Jersey Shore from our Barnegat hub — beach weddings, Asbury Park venues and Atlantic City events.",
     },
@@ -153,9 +158,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "princeton",
     nav: "Princeton",
-    h1: "Flower wall rental in Princeton",
+    h1: "Flower walls and photo booths in Princeton",
     meta: {
-      title: "Flower Wall Rental Princeton NJ",
+      title: "Flower Walls & Photo Booths Princeton NJ",
       description:
         "Flower wall and photo booth rentals in Princeton, NJ — garden weddings, historic inns and university-season events, reached from both delivery hubs.",
     },
@@ -181,9 +186,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "morristown",
     nav: "Morristown",
-    h1: "Flower wall rental in Morristown",
+    h1: "Flower walls and photo booths in Morristown",
     meta: {
-      title: "Flower Wall Rental Morristown NJ",
+      title: "Flower Walls & Photo Booths Morristown NJ",
       description:
         "Flower wall and photo booth rentals in Morristown and Morris County — estate venues, hotel ballrooms and corporate events, 30 minutes from our Newark hub.",
     },
@@ -208,9 +213,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "red-bank",
     nav: "Red Bank",
-    h1: "Flower wall rental in Red Bank",
+    h1: "Flower walls and photo booths in Red Bank",
     meta: {
-      title: "Flower Wall Rental Red Bank NJ",
+      title: "Flower Walls & Photo Booths Red Bank NJ",
       description:
         "Flower wall and photo booth rentals in Red Bank and Monmouth County — riverfront weddings, downtown restaurants and theatre-district events.",
     },
@@ -235,9 +240,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "edison",
     nav: "Edison",
-    h1: "Flower wall rental in Edison",
+    h1: "Flower walls and photo booths in Edison",
     meta: {
-      title: "Flower Wall Rental Edison NJ",
+      title: "Flower Walls & Photo Booths Edison NJ",
       description:
         "Flower wall and photo booth rentals in Edison and Middlesex County — large banquet halls, multi-day weddings and 300-guest events along the Route 1 corridor.",
     },
@@ -262,9 +267,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "new-brunswick",
     nav: "New Brunswick",
-    h1: "Flower wall rental in New Brunswick",
+    h1: "Flower walls and photo booths in New Brunswick",
     meta: {
-      title: "Flower Wall Rental New Brunswick NJ",
+      title: "Flower Walls & Photo Booths New Brunswick NJ",
       description:
         "Flower wall and photo booth rentals in New Brunswick, NJ — hotel and conference venues, university and hospital galas, and downtown celebrations.",
     },
@@ -289,9 +294,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "cherry-hill",
     nav: "Cherry Hill",
-    h1: "Flower wall rental in Cherry Hill",
+    h1: "Flower walls and photo booths in Cherry Hill",
     meta: {
-      title: "Flower Wall Rental Cherry Hill NJ",
+      title: "Flower Walls & Photo Booths Cherry Hill NJ",
       description:
         "Flower wall and photo booth rentals in Cherry Hill and Camden County — country clubs, synagogue celebrations and South Jersey weddings, from our Barnegat hub.",
     },
@@ -316,9 +321,9 @@ export const LOCATIONS: LocationPage[] = [
   {
     slug: "atlantic-city",
     nav: "Atlantic City",
-    h1: "Flower wall rental in Atlantic City",
+    h1: "Flower walls and photo booths in Atlantic City",
     meta: {
-      title: "Flower Wall Rental Atlantic City NJ",
+      title: "Flower Walls & Photo Booths Atlantic City NJ",
       description:
         "Flower wall and photo booth rentals in Atlantic City — casino ballrooms, convention centre activations and boardwalk weddings, served from our Barnegat hub.",
     },

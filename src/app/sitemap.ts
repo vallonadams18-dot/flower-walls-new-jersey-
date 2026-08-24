@@ -4,6 +4,7 @@ import { SERVICES } from "@/data/services";
 import { BOOTHS } from "@/data/booths";
 import { EVENTS } from "@/data/events";
 import { LOCATIONS } from "@/data/locations";
+import { COMBOS } from "@/data/combos";
 import walls from "@/data/walls.json";
 
 export const dynamic = "force-static";
@@ -27,6 +28,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...BOOTHS.map((b) => ({ path: `/photo-booths/${b.slug}/`, priority: 0.75, freq: "monthly" as const })),
     ...EVENTS.map((e) => ({ path: `/events/${e.slug}/`, priority: 0.75, freq: "monthly" as const })),
     ...LOCATIONS.map((l) => ({ path: `/locations/${l.slug}/`, priority: 0.7, freq: "monthly" as const })),
+    // The coverage grid. Derived like everything else, so a new combo
+    // cannot be built without appearing here.
+    ...COMBOS.map((c) => ({ path: `/${c.slug}/`, priority: 0.8, freq: "monthly" as const })),
     ...(walls as { slug: string; hasDetailPage?: boolean }[])
       .filter((w) => w.hasDetailPage)
       .map((w) => ({ path: `/flower-walls/${w.slug}/`, priority: 0.7, freq: "monthly" as const })),

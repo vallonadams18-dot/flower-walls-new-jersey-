@@ -3,6 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { LOCATIONS, getLocation } from "@/data/locations";
 import { EVENTS } from "@/data/events";
+import { combosForLocation, COMBO_SERVICES } from "@/data/combos";
 import { pageMeta } from "@/lib/metadata";
 import { JsonLd, breadcrumbJsonLd } from "@/lib/jsonld";
 import { SITE } from "@/lib/site";
@@ -24,6 +25,7 @@ export default async function LocationPage({ params }: Props) {
   const l = getLocation(location);
   if (!l) notFound();
   const evts = l.events.map((s) => EVENTS.find((e) => e.slug === s)).filter(Boolean);
+  const combos = combosForLocation(l.slug);
   return (
     <>
       <JsonLd
@@ -51,6 +53,25 @@ export default async function LocationPage({ params }: Props) {
             ))}
           </section>
         ))}
+        {combos.length ? (
+          <section>
+            <h2 className="font-[family-name:var(--font-display)] text-2xl">
+              What we rent in {l.nav}
+            </h2>
+            <ul className="mt-3 flex flex-wrap gap-x-5 gap-y-2">
+              {combos.map((c) => (
+                <li key={c.slug}>
+                  <Link
+                    href={`/${c.slug}/`}
+                    className="text-heritage hover:underline underline-offset-4"
+                  >
+                    {COMBO_SERVICES[c.service].label} in {c.town}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </section>
+        ) : null}
         <section>
           <h2 className="font-[family-name:var(--font-display)] text-2xl">Popular here</h2>
           <ul className="mt-3 flex flex-wrap gap-3">
