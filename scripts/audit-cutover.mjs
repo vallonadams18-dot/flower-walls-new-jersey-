@@ -51,6 +51,14 @@ const toUrl = (f) =>
 /** Next's own error pages are not indexable content. */
 const FRAMEWORK = new Set(["/404.html", "/404/", "/_not-found/"]);
 
+/**
+ * Ownership-verification files dropped in the web root by search engines.
+ * They are deliberately bare — no canonical, no title — and must stay that
+ * way, so they are not pages for the purposes of this audit.
+ */
+const isVerificationFile = (u) =>
+  /^\/(google[0-9a-f]+\.html|BingSiteAuth\.xml|yandex_[0-9a-f]+\.html)$/i.test(u);
+
 const fail = [];
 const warn = [];
 const stubs = [];
@@ -59,7 +67,7 @@ const seenCanonical = new Map();
 
 for (const f of htmlFiles) {
   const url = toUrl(f);
-  if (FRAMEWORK.has(url)) continue;
+  if (FRAMEWORK.has(url) || isVerificationFile(url)) continue;
   const html = await readFile(f, "utf8");
 
   // Redirect stubs are not indexable pages — they are the redirect itself.

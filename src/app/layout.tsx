@@ -17,6 +17,13 @@ export const metadata: Metadata = {
   },
   description:
     "Premium flower wall rentals across New Jersey. Over 50 designs for weddings, corporate events and parties.",
+  // Google Search Console ownership for the
+  // https://www.flowerwallsnewjersey.com/ property, verified 2026-08-24 under
+  // hello@mirrormebrooklyn.com. Leave this in place — removing it un-verifies
+  // the property and Search Console stops reporting.
+  verification: {
+    google: "tm4KDOEzen40gSYKB0GodLTCzwtqdYvItE-Vc3OAlzQ",
+  },
 };
 
 export default function RootLayout({
