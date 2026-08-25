@@ -25,6 +25,13 @@ export const SITE = {
     signIn:
       "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/users/sign_in",
   },
+
+  /**
+   * Google Analytics 4 measurement ID. Loaded from the root layout via
+   * next/script. Set to an empty string to switch analytics off entirely —
+   * the layout skips the tags rather than emitting a broken one.
+   */
+  ga4: "G-4R7G74E855",
 } as const;
 
 /**

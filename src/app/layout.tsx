@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import Script from "next/script";
 import "./globals.css";
 import { SITE, NAV, FOOTER_NAV } from "@/lib/site";
 import { asset } from "@/lib/asset";
@@ -33,6 +34,25 @@ export default function RootLayout({
     <html lang="en" className={`${cormorant.variable} ${inter.variable}`}>
       <body className="min-h-screen flex flex-col antialiased">
         <JsonLd data={[businessJsonLd(), websiteJsonLd()]} />
+
+        {/* Google Analytics 4. `afterInteractive` so the tag never blocks
+            first paint — this is a static export and the pages must render
+            without waiting on Google. Skipped entirely when SITE.ga4 is
+            empty, so a build with analytics off emits no broken tag. */}
+        {SITE.ga4 ? (
+          <>
+            <Script
+              src={`https://www.googletagmanager.com/gtag/js?id=${SITE.ga4}`}
+              strategy="afterInteractive"
+            />
+            <Script id="ga4-init" strategy="afterInteractive">
+              {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${SITE.ga4}');`}
+            </Script>
+          </>
+        ) : null}
 
         <header className="sticky top-0 z-50 border-b border-line bg-white/95 backdrop-blur">
           <div className="mx-auto max-w-6xl px-4 py-3 flex items-center gap-5">
