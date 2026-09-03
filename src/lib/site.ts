@@ -3,8 +3,11 @@ export const SITE = {
   legalName: "Flower Wall Rentals New Jersey",
   url: process.env.NEXT_PUBLIC_SITE_URL || "https://www.flowerwallsnewjersey.com",
 
-  phone: "(347) 383-5851",
-  phoneHref: "tel:+13473835851",
+  // Dedicated New Jersey line as of 2026-09-03. Each brand has its own number
+  // now; (347) 383-5851 was shared and stays with Flower Walls NYC. Keep these
+  // two in step -- phoneHref is E.164 of the display string above.
+  phone: "(609) 609-2445",
+  phoneHref: "tel:+16096092445",
 
   addressLocality: "Newark",
   addressRegion: "NJ",
