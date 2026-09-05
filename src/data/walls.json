@@ -58,26 +58,6 @@
     "hasDetailPage": true
   },
   {
-    "slug": "amazon-hawaiian-activation",
-    "name": "Amazon Hawaiian activation",
-    "packageId": 138588,
-    "image": "https://img.checkcherry.com/Q3x0OwzQ4IGnng3M5d3wyX0Cb30Xl0Svi4iqUk92_qo/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi91YnM5M3Az/aW96Yzg4YWU2ZmJk/eGtudHdwNnVy",
-    "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=138588",
-    "price": null,
-    "description": "Our large-format tropical activation build — Amazon's greenery depth combined with Hawaiian colour, sized for brand events. Quoted to the space.",
-    "eventUses": [
-      "brand activations",
-      "trade shows",
-      "large events"
-    ],
-    "palette": [
-      "green",
-      "coral"
-    ],
-    "needsReview": true,
-    "hasDetailPage": false
-  },
-  {
     "slug": "american-lady",
     "name": "American Lady",
     "packageId": 61465,
@@ -455,14 +435,6 @@
     "hasDetailPage": false
   },
   {
-    "slug": "majestic",
-    "name": "Majestic",
-    "packageId": 117492,
-    "image": "https://img.checkcherry.com/JsrMK1CgGGZ2RjUJoZ4hu_5OS3X8jJSCDBO8F73yw4g/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi9ranh3aDFv/YmdtZzBrZG8zZWMy/bTRqaHhpNjU1",
-    "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=117492",
-    "price": null
-  },
-  {
     "slug": "monarch",
     "name": "Monarch",
     "packageId": 61461,
@@ -658,25 +630,6 @@
     ],
     "needsReview": false,
     "hasDetailPage": true
-  },
-  {
-    "slug": "pink-arcadia",
-    "name": "Pink Arcadia",
-    "packageId": 89174,
-    "image": "https://img.checkcherry.com/l9Va-mtGLFcFC4Ni46eNMwr2VQa3R7kWjSTej2jGXOk/rs:fit:800:800/czM6Ly9jaGVjay1j/aGVycnktcHJvZHVj/dGlvbi83MGxvazI1/MGMyMGQxZ2NncnJ0/dW1jejcyNWZm",
-    "bookingUrl": "https://new-jersey-flower-wall-photo-booth-rentals.checkcherry.com/reservation/set_event?event_type_id=89174",
-    "price": null,
-    "description": "Pink-forward styling with garden depth. Sits between our blush walls and the full Barbie pink.",
-    "eventUses": [
-      "showers",
-      "birthdays",
-      "bachelorettes"
-    ],
-    "palette": [
-      "pink"
-    ],
-    "needsReview": true,
-    "hasDetailPage": false
   },
   {
     "slug": "pink-blush",
