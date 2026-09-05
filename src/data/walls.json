@@ -29,10 +29,13 @@
       "evening events"
     ],
     "palette": [
-      "blue"
+      "blue",
+      "grey",
+      "silver",
+      "navy"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "needsReview": false,
+    "hasDetailPage": true
   },
   {
     "slug": "amazon",
@@ -48,10 +51,11 @@
       "launches"
     ],
     "palette": [
-      "green"
+      "green",
+      "cream"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "needsReview": false,
+    "hasDetailPage": true
   },
   {
     "slug": "amazon-hawaiian-activation",
@@ -103,10 +107,11 @@
     ],
     "palette": [
       "white",
-      "ice blue"
+      "ivory",
+      "cream"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "needsReview": false,
+    "hasDetailPage": true
   },
   {
     "slug": "crimson-rose",
@@ -631,8 +636,8 @@
       "pink",
       "blue"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "needsReview": false,
+    "hasDetailPage": true
   },
   {
     "slug": "pink-purple-ombre",
@@ -922,8 +927,8 @@
       "green",
       "white"
     ],
-    "needsReview": true,
-    "hasDetailPage": false
+    "needsReview": false,
+    "hasDetailPage": true
   },
   {
     "slug": "tailed-jay-2-0",
